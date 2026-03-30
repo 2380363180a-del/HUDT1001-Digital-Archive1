@@ -35,7 +35,7 @@ This archive is structured around **six core dimensions** of Shenzhen’s transf
 
 st.markdown("---")
 
-st.subheader"Time Slider" 
+st.subheader("Time Slider")
 st.title("🏙️ Shenzhen: 45 Years of Transformation")
 st.markdown("""
 Welcome to the Shenzhen Digital Archive. 
