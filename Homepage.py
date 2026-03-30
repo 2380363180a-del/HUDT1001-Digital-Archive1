@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.write("""# Development of Shenzhen from 1980 to 2025""")
+st.image("Shenzhen_CBD_and_River.jpg")
 st.header("Introduction")
 st.header("Methodology")
