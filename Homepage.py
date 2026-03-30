@@ -25,10 +25,10 @@ def set_page_bg(image_file):
         /* 加强遮罩 + 统一覆盖整个内容区 */
         [data-testid="stAppViewContainer"] .block-container {{
             background-color: rgba(0, 0, 0, 0.55);   /* ← 调深了，更均匀好看 */
-            border-radius: 18px;
-            padding: 40px 45px;
+            border-radius: auto;
+            padding: 40px auto;
             margin: 30px auto;
-            max-width: 1200px;
+            max-width: auto;
             box-shadow: 0 10px 30px rgba(0,0,0,0.4);
         }}
         
