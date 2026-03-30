@@ -34,3 +34,58 @@ This archive is structured around **six core dimensions** of Shenzhen’s transf
 """)
 
 st.markdown("---")
+
+st.subheader"Time Slider" 
+st.title("🏙️ Shenzhen: 45 Years of Transformation")
+st.markdown("""
+Welcome to the Shenzhen Digital Archive. 
+Use the slider below to journey through time and witness the incredible evolution of Shenzhen from 1979 to the present day.
+""")
+
+st.divider()
+
+# 3. Interactive Timeline Slider
+# 1979 is widely considered the starting point of Shenzhen's rapid development
+selected_year = st.slider(
+    "Select a Year:", 
+    min_value=1979, 
+    max_value=2024, 
+    value=1979, 
+    step=1
+)
+
+# 4. Data Dictionary for Captions (Optional but recommended)
+# You can expand this dictionary as you gather more information for each specific year.
+captions = {
+    1979: "1979: Bao'an County is promoted to Shenzhen City.",
+    1980: "1980: Shenzhen becomes China's first Special Economic Zone.",
+    1990: "1990: The Shenzhen Stock Exchange is established.",
+    1999: "1999: The first China High-Tech Fair is held in Shenzhen.",
+    2010: "2010: The Special Economic Zone is expanded to cover the whole city.",
+    2024: "2024: Shenzhen today — a global hub for technology, finance, and innovation."
+}
+
+# 5. Image Display Logic
+# We assume your images are saved in an 'images' folder named simply by year (e.g., 'images/1979.jpg')
+image_path = f"images/{selected_year}.jpg"
+
+# Check if the image exists in the directory
+if os.path.exists(image_path):
+    # Load and display the image
+    img = Image.open(image_path)
+    
+    # Fetch the caption if it exists, otherwise use a default one
+    caption_text = captions.get(selected_year, f"Shenzhen in the year {selected_year}.")
+    
+    st.image(img, caption=caption_text, use_column_width=True)
+else:
+    # Fallback message if the image for that year hasn't been added to the archive yet
+    st.warning(f"📸 The image for **{selected_year}** is not yet available in the archive.")
+    st.info(f"**To fix this:** Add an image named `{selected_year}.jpg` to the `images/` folder in your GitHub repository.")
+
+st.divider()
+
+
+
+
+
