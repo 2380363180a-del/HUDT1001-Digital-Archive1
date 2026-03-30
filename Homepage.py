@@ -12,8 +12,6 @@ st.markdown("---")
 
 st.subheader("Key Contents")
 
-st.subheader("Key Contents")
-
 st.markdown("""
 This archive is structured around **six core dimensions** of Shenzhen’s transformation, using 22 chronologically selected Wikimedia Commons images, an interactive timeline slider, and full Dublin Core metadata.
 
