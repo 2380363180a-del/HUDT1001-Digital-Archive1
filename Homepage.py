@@ -1,5 +1,25 @@
 import streamlit as st
 
+st.markdown("""
+<style>
+    [data-testid="stAppViewContainer"] {
+        background-image: url("pages/Commercial_area_of_futian_to_east2020.jpg");
+        background-size: cover;           
+        background-position: center top;  
+        background-repeat: no-repeat;
+        background-attachment: fixed;    
+        height: 100vh;                   
+    }
+
+    [data-testid="stAppViewContainer"] .block-container {
+        background-color: rgba(0, 0, 0, 0.65);  
+        border-radius: 15px;
+        padding: 30px;
+        margin-top: 20px;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 st.write("""# Shenzhen 1980-2025 Urban Development Digital Archive""")
 
 st.markdown("---")
