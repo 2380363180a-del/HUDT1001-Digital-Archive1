@@ -4,18 +4,24 @@ st.markdown("""
 <style>
     [data-testid="stAppViewContainer"] {
         background-image: url("pages/Commercial_area_of_futian_to_east2020.jpg");
-        background-size: cover;           
-        background-position: center top;  
+        background-size: cover;
+        background-position: center top;
         background-repeat: no-repeat;
         background-attachment: fixed;    
-        height: 100vh;                   
+        height: 100vh;
     }
 
     [data-testid="stAppViewContainer"] .block-container {
-        background-color: rgba(0, 0, 0, 0.65);  
-        border-radius: 15px;
-        padding: 30px;
-        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.40); 
+        border-radius: 16px;
+        padding: 35px 40px;
+        margin: 30px auto;
+        max-width: 1100px;               
+    }
+
+    /* 让标题和文字更清晰 */
+    h1, h2, h3, p, li {
+        text-shadow: 0 2px 8px rgba(0,0,0,0.6);
     }
 </style>
 """, unsafe_allow_html=True)
