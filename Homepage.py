@@ -12,4 +12,28 @@ st.markdown("---")
 
 st.subheader("Key Contents")
 
+st.subheader("Key Contents")
+
+st.markdown("""
+This archive is structured around **six core dimensions** of Shenzhen’s transformation, using 22 chronologically selected Wikimedia Commons images, an interactive timeline slider, and full Dublin Core metadata.
+
+- **Economic Transformation**  
+  From fishing village (1980) to Special Economic Zone (SEZ) pioneer, then from manufacturing hub to global tech powerhouse (Huawei, Tencent, DJI).
+
+- **Urban & Spatial Expansion**  
+  Aerial and map views showing explosive land-use change: farmland → industrial zones → dense high-rise skyline and innovation districts.
+
+- **Population & Migration**  
+  Influx of millions of migrant workers; the human story behind the rapid urban growth from ~30,000 to over 17 million residents.
+
+- **Technological Innovation**  
+  Evolution into “China’s Silicon Valley” — from electronics assembly in the 1980s–90s to AI, drones, and green tech leadership by 2025.
+
+- **Infrastructure & Planning**  
+  Development of ports, highways, a metro system, and sustainable urban planning that turned a border town into a model modern metropolis.
+
+- **Environmental & Social Reflection**  
+  Early pollution challenges followed by greening efforts, eco-city initiatives, and critical questions about sustainable growth in a hyper-urban context.
+""")
+
 st.markdown("---")
