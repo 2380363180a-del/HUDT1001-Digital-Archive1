@@ -1,6 +1,7 @@
 import streamlit as st
 import base64
-
+from PIL import Image
+import os 
 st.write("""# Shenzhen 1980-2025 Urban Development Digital Archive""")
 
 st.subheader("Introduction")
