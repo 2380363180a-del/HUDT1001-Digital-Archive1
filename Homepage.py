@@ -3,7 +3,7 @@ import streamlit as st
 st.markdown("""
 <style>
     [data-testid="stAppViewContainer"] {
-        background-image: url("Commercial_area_of_futian_to_east2020.jpg");
+        background-image("Commercial_area_of_futian_to_east2020.jpg");
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
