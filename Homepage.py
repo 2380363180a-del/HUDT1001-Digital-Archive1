@@ -2,47 +2,6 @@ import streamlit as st
 import base64
 
 st.write("""# Shenzhen 1980-2025 Urban Development Digital Archive""")
-# ==================== 优化版全屏背景（遮罩更均匀 + 视差效果） ====================
-@st.cache_data
-def get_base64_of_bin_file(bin_file):
-    with open(bin_file, 'rb') as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
-
-def set_page_bg(image_file):
-    bin_str = get_base64_of_bin_file(image_file)
-    page_bg_img = f'''
-    <style>
-        [data-testid="stAppViewContainer"] {{
-            background-image: url("data:image/jpeg;base64,{bin_str}");
-            background-size: cover;
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-attachment: fixed;     /* 关键：下滑时背景轻微往下移动（视差效果） */
-            height: 100vh;
-        }}
-        
-        /* 加强遮罩 + 统一覆盖整个内容区 */
-        [data-testid="stAppViewContainer"] .block-container {{
-            background-color: rgba(0, 0, 0, 0.55);   /* ← 调深了，更均匀好看 */
-            border-radius: auto;
-            padding: 40px auto;
-            margin: 30px auto;
-            max-width: auto;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-        }}
-        
-        /* 让文字更清晰 */
-        h1, h2, h3, p, li {{
-            text-shadow: 0 3px 12px rgba(0,0,0,0.85);
-        }}
-    </style>
-    '''
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-    
-# 调用函数（使用你的图片）
-set_page_bg("Commercial_area_of_futian_to_east2020.jpg")
-st.markdown("---")
 
 st.subheader("Introduction")
 st.write("This digital archive documents the **45-year transformation of Shenzhen** from a small border town to a global hub of innovation and urban development. Through historical photographs, official documents, urban maps, statistical charts, and cultural landmarks, it visualises the city’s rapid growth, industrial evolution, and spatial expansion.")
