@@ -13,16 +13,3 @@ st.markdown("---")
 st.subheader("Key Contents")
 
 st.markdown("---")
-
-# 核心：点击展开/折叠
-if st.button("Explore the Archive ↓", use_container_width=True):
-    st.session_state.expand_archive = not st.session_state.get("expand_archive", False)
-
-# 控制是否展开
-if st.session_state.get("expand_archive", False):
-    st.markdown("## Timeline & Archival Items")
-    st.markdown("Your 1980s / 1990s / 2000s / 2010s / 2020s sections go here.")
-    st.markdown("Your map slider, images, charts, metadata table…")
-
-    st.markdown("---")
-    st.caption("Course: Digital Archives | Group Members: [Your Names] | 2025")
