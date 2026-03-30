@@ -2,7 +2,7 @@ import streamlit as st
 import base64
 
 st.write("""# Shenzhen 1980-2025 Urban Development Digital Archive""")
-# ==================== 全屏背景（base64 方法） ====================
+# ==================== 优化版全屏背景（遮罩更均匀 + 视差效果） ====================
 @st.cache_data
 def get_base64_of_bin_file(bin_file):
     with open(bin_file, 'rb') as f:
@@ -18,26 +18,28 @@ def set_page_bg(image_file):
             background-size: cover;
             background-position: center top;
             background-repeat: no-repeat;
-            background-attachment: fixed;     /* ← 下滑时背景微微往下移动（视差效果） */
+            background-attachment: fixed;     /* 关键：下滑时背景轻微往下移动（视差效果） */
             height: 100vh;
         }}
         
-        /* 轻量半透明遮罩，让文字清晰又不会变成黑条 */
+        /* 加强遮罩 + 统一覆盖整个内容区 */
         [data-testid="stAppViewContainer"] .block-container {{
-            background-color: rgba(0, 0, 0, 0.35);
-            border-radius: 16px;
-            padding: 35px 40px;
+            background-color: rgba(0, 0, 0, 0.55);   /* ← 调深了，更均匀好看 */
+            border-radius: 18px;
+            padding: 40px 45px;
             margin: 30px auto;
-            max-width: 1100px;
+            max-width: 1200px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
         }}
         
+        /* 让文字更清晰 */
         h1, h2, h3, p, li {{
-            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+            text-shadow: 0 3px 12px rgba(0,0,0,0.85);
         }}
     </style>
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
-
+    
 # 调用函数（使用你的图片）
 set_page_bg("Commercial_area_of_futian_to_east2020.jpg")
 st.markdown("---")
