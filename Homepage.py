@@ -65,15 +65,23 @@ captions = {
     2024: "2024: Shenzhen today — a global hub for technology, finance, and innovation."
 }
 
+# ----------------- 新增的缓存加速黑科技 -----------------
+@st.cache_data
+def load_image(path):
+    """读取并缓存图片，避免每次滑动都去读取硬盘"""
+    if os.path.exists(path):
+        return Image.open(path)
+    return None
+# ---------------------------------------------------------
+
 # 5. Image Display Logic
-# We assume your images are saved in an 'images' folder named simply by year (e.g., 'images/1979.jpg')
 image_path = f"images/{selected_year}.jpg"
 
-# Check if the image exists in the directory
-if os.path.exists(image_path):
-    # Load and display the image
-    img = Image.open(image_path)
-    
+# 调用缓存函数来加载图片
+img = load_image(image_path)
+
+# Check if the image exists and display it
+if img is not None:
     # Fetch the caption if it exists, otherwise use a default one
     caption_text = captions.get(selected_year, f"Shenzhen in the year {selected_year}.")
     
