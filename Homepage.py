@@ -101,9 +101,7 @@ st.markdown("---")
 
 
 st.title("Shenzhen 1980-2025 Development Milestones")
-st.subheader("Interactive Chronological Archive")
 
-# ==================== 读取 CSV ====================
 csv_file = "Milestones.csv"
 
 try:
@@ -117,20 +115,18 @@ except UnicodeDecodeError:
         except UnicodeDecodeError:
             df = pd.read_csv(csv_file, encoding='gb18030')
 
-# ==================== 排序（支持 2023.1、2023.2） ====================
 df['Date'] = df['Date'].astype(str).str.strip()
 df['sort_key'] = pd.to_numeric(df['Date'].str.split('.').str[0], errors='coerce') + \
                  pd.to_numeric(df['Date'].str.split('.').str[1], errors='coerce').fillna(0) / 10
 df['display_date'] = df['Date'].str.split('.').str[0]
 df = df.sort_values(by='sort_key').reset_index(drop=True)
 
-# ==================== 显示每个对象 ====================
 for idx, row in df.iterrows():
     date_str = str(row['display_date']).strip()
     title = str(row.get('Title', '')).strip()
     description = str(row.get('Description', '')).strip()
 
-    st.subheader(date_str)   # 只显示纯年份
+    st.subheader(date_str)  
 
     if title and title.lower() not in ['na', 'nan', '']:
         folder = "Milestone Sources"
