@@ -137,12 +137,16 @@ st.markdown("---")
 
 
 
+import streamlit as st
+import pandas as pd
+import os
+
 st.set_page_config(page_title="Shenzhen 1980-2025 Digital Archive", layout="wide")
 
 st.title("Shenzhen 1980-2025 Urban Development Digital Archive")
 st.subheader("Interactive Chronological Archive")
 
-# ==================== 读取 CSV（解决中文编码） ====================
+# ==================== 读取 CSV ====================
 csv_file = "Milestones.csv"
 
 try:
@@ -156,44 +160,45 @@ except UnicodeDecodeError:
         except UnicodeDecodeError:
             df = pd.read_csv(csv_file, encoding='gb18030')
 
-# ==================== 关键改进：按 Date 从小到大排序 ====================
-# 支持 1979、1982、2023.1、2023.2 等格式
+# ==================== 关键修复：严格按 Date 从小到大排序 ====================
 df['Date'] = df['Date'].astype(str).str.strip()
-df['sort_key'] = pd.to_numeric(df['Date'], errors='coerce')   # 把 2023.1 转为 2023.1，2023 转为 2023.0
-df = df.sort_values(by='sort_key').reset_index(drop=True)
 
-# ==================== 自动显示每个对象 ====================
+# 把 "2023.1" 转为 2023.1，把 "1979" 转为 1979.0
+df['sort_key'] = pd.to_numeric(df['Date'], errors='coerce')
+
+# 如果有无法转成数字的，就放到最后
+df = df.sort_values(by='sort_key', na_position='last').reset_index(drop=True)
+
+# ==================== 显示每个对象 ====================
 for idx, row in df.iterrows():
     date_str = str(row['Date']).strip()
     title = str(row.get('Title', '')).strip()
     description = str(row.get('Description', '')).strip()
 
-    # Date 作为 subheader
-    st.subheader(date_str)
+    st.subheader(date_str)                     # Date 作为标题
 
-    # 如果 Title 不是 NA/空值，才尝试显示图片
-    if title and title.lower() != "na" and title.lower() != "nan":
+    # 如果有 Title 且不是 NA，才显示图片
+    if title and title.lower() not in ['na', 'nan', '']:
         folder = "Milestone Sources"
         found = False
         for ext in ['.jpg', '.JPG', '.png', '.PNG', '.pdf']:
             filename = os.path.join(folder, title + ext)
             if os.path.exists(filename):
                 if ext.lower() == '.pdf':
-                    st.write(f"📄 PDF Document: {title + ext}")
-                    st.markdown(f"[📥 下载 PDF]({filename})")
+                    st.write(f"📄 PDF: {title + ext}")
+                    st.markdown(f"[下载 PDF]({filename})")
                 else:
-                    st.image(filename, use_column_width=True)   # 横向铺满
+                    st.image(filename, use_column_width=True)
                 found = True
                 break
         if not found:
             st.warning(f"⚠️ 未找到图片: {title}")
 
-    # 显示描述
     st.markdown(description)
     st.divider()
 
-# 可选：完整元数据表
-with st.expander("📊 查看完整 Dublin Core 元数据表"):
+# 可选：显示完整表格
+with st.expander("📊 查看完整元数据表"):
     st.dataframe(df, use_container_width=True)
 
 
