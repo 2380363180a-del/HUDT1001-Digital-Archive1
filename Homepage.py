@@ -12,32 +12,6 @@ st.write("This digital archive documents the **45-year transformation of Shenzhe
 
 st.markdown("---")
 
-st.subheader("Key Contents")
-
-st.markdown("""
-This archive is structured around **six core dimensions** of Shenzhen’s transformation, using 22 chronologically selected Wikimedia Commons images, an interactive timeline slider, and full Dublin Core metadata.
-
-- **Economic Transformation**  
-  From fishing village (1980) to Special Economic Zone (SEZ) pioneer, then from manufacturing hub to global tech powerhouse (Huawei, Tencent, DJI).
-
-- **Urban & Spatial Expansion**  
-  Aerial and map views showing explosive land-use change: farmland → industrial zones → dense high-rise skyline and innovation districts.
-
-- **Population & Migration**  
-  Influx of millions of migrant workers; the human story behind the rapid urban growth from ~30,000 to over 17 million residents.
-
-- **Technological Innovation**  
-  Evolution into “China’s Silicon Valley” — from electronics assembly in the 1980s–90s to AI, drones, and green tech leadership by 2025.
-
-- **Infrastructure & Planning**  
-  Development of ports, highways, a metro system, and sustainable urban planning that turned a border town into a model modern metropolis.
-
-- **Environmental & Social Reflection**  
-  Early pollution challenges followed by greening efforts, eco-city initiatives, and critical questions about sustainable growth in a hyper-urban context.
-""")
-
-st.markdown("---")
-
 st.title("Map of Shenzhen 1979 — 2020")
 # 2. 准备数据
 available_years = [1979] + list(range(1984, 2021))
@@ -124,17 +98,7 @@ html_code = f"""
 """
 components.html(html_code, height=750)
 
-st.divider()
-
-st.subheader("1980: The Establishment of Shenzhen Special Zone")
-st.image("pages/Shenzhen1979.png")
-st.write("On March 5, 1979, the State Council of the People's Republic of China issued Document No. [1979] 63, officially approving the establishment of Shenzhen (formerly Bao'an County), marking the legal starting point for Shenzhen's transformation from a border town to a modern city, and paving the way for it to be designated as China's first special economic zone in 1980.")
-
 st.markdown("---")
-
-
-
-
 
 st.set_page_config(page_title="Shenzhen 1980-2025 Digital Archive", layout="wide")
 
