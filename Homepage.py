@@ -38,6 +38,12 @@ This archive is structured around **six core dimensions** of Shenzhen’s transf
 
 st.markdown("---")
 
+import streamlit as st
+import os
+import base64
+import json
+import streamlit.components.v1 as components
+
 st.subheader("Time Slider")
 st.title("🏙️ Shenzhen: 45 Years of Transformation")
 st.markdown("""
@@ -49,16 +55,8 @@ st.divider()
 # 2. 准备数据
 available_years = [1979] + list(range(1984, 2021))
 
-# 补全你代码中被截断的 captions 字典
-captions = {
-    1979: "1979: Bao'an County is promoted to Shenzhen City.",
-    1980: "1980: Shenzhen becomes China's first Special Economic Zone.",
-    1990: "1990: The Shenzhen Stock Exchange is established.",
-    1999: "1999: The first China High-Tech Fair is held in Shenzhen.",
-    2010: "2010: The Special Economic Zone is expanded to cover the whole city.",
-    2020: "2020: Shenzhen celebrates the 40th anniversary of the SEZ."
-}
 # 3. 核心黑科技：图片 Base64 预加
+@st.cache_data
 def get_images_base64():
     """将所有存在的图片一次性读取并转为 Base64，避免滑动时读取硬盘"""
     img_dict = {}
@@ -79,12 +77,10 @@ with st.spinner("⏳ 正在打包历史影像，初次加载请稍候..."):
     
     # 将 Python 字典转换为 JavaScript 可以识别的 JSON 字符串
     js_images = json.dumps(images_b64)
-    js_captions = json.dumps({y: captions.get(y, f"Shenzhen in the year {y}.") for y in available_years})
+    # 【修改点1】：统一把所有年份的说明写成 Shenzhen in the year xxxx
+    js_captions = json.dumps({y: f"Shenzhen in the year {y}" for y in available_years})
     js_years = json.dumps(available_years)
 
-
-import os
-st.write("当前 images 文件夹里实际存在的文件有：", os.listdir("images/"))
 # 5. 构建原生 HTML/JS 组件 (实现毫秒级切换)
 html_code = f"""
 <!DOCTYPE html>
@@ -92,7 +88,10 @@ html_code = f"""
 <head>
 <style>
     body {{ font-family: sans-serif; text-align: center; color: #FAFAFA; background-color: transparent; margin: 0; padding: 0; }}
-    #year-display {{ font-size: 2.5em; font-weight: 800; color: #ff4b4b; margin-bottom: 10px; }}
+    
+    /* 【修改点2】：将年份数字颜色改为白色，并增加了一点阴影提升质感 */
+    #year-display {{ font-size: 2.5em; font-weight: 800; color: white; margin-bottom: 10px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }}
+    
     /* 自定义滑动条样式 */
     #slider {{ width: 100%; margin: 20px 0; cursor: pointer; accent-color: #ff4b4b; height: 6px; }}
     /* 图片容器 */
@@ -132,7 +131,7 @@ html_code = f"""
         function updateView(index) {{
             const year = years[index];
             yearDisplay.innerText = year;
-            caption.innerText = captions[year] || "Shenzhen in the year " + year + ".";
+            caption.innerText = captions[year]; // 直接调用统一格式的文本
             
             // 如果图片存在则显示，否则显示警告信息
             if (images[year]) {{
