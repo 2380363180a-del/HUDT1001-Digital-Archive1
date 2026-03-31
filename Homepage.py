@@ -140,7 +140,7 @@ for idx, row in df.iterrows():
     if title and title.lower() not in ['na', 'nan', '']:
         folder = "Milestone Sources"
         found = False
-        for ext in ['.jpg', '.JPG', '.png', '.PNG', '.pdf']:
+        for ext in ['.jpg', '.JPG', '.png', '.PNG', '.pdf', '.jpeg']:
             filename = os.path.join(folder, title + ext)
             if os.path.exists(filename):
                 if ext.lower() == '.pdf':
