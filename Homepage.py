@@ -85,7 +85,7 @@ else:
     st.info(f"**To fix this:** Add an image named `{selected_year}.jpg` to the `images/` folder in your GitHub repository.")
 
 st.divider()
-
+#end of timeline slider
 
 
 
