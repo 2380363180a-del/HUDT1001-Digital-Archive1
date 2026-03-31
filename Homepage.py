@@ -44,11 +44,7 @@ import json
 import streamlit.components.v1 as components
 
 st.subheader("Time Slider")
-st.title("🏙️ Shenzhen: 45 Years of Transformation")
-st.markdown("""
-Welcome to the Shenzhen Digital Archive. 
-Use the slider below to journey through time and witness the incredible evolution of Shenzhen from 1979 to the present day.
-""")
+st.title("Shenzhen: 45 Years of Transformation")
 st.divider()
 
 # 2. 准备数据
