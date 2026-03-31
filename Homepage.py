@@ -59,7 +59,7 @@ captions = {
     2020: "2020: Shenzhen celebrates the 40th anniversary of the SEZ."
 }
 # 3. 核心黑科技：图片 Base64 预加载
-@st.cache_data
+#@st.cache_data
 def get_images_base64():
     """将所有存在的图片一次性读取并转为 Base64，避免滑动时读取硬盘"""
     img_dict = {}
