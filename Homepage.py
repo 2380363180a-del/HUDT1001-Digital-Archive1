@@ -130,7 +130,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 def display_object(year, title, description, image_path, source, license_text, caption=""):
-    # Year + Title（放在最上面）
     st.markdown(f"### {year}")
     st.markdown(f"#### {title}")
     
@@ -139,13 +138,12 @@ def display_object(year, title, description, image_path, source, license_text, c
     
     # Description
     st.markdown("**Description:**")
-    st.write(description)                    # ← 必须和Excel里Description一字不差
-    
-    # Source 和 License（浅灰 + 透明，不突出）
+    st.write(description)                 
+    st.markdown("---")  
     st.markdown(f'<p class="light-text"><strong>Source:</strong> {source}</p>', unsafe_allow_html=True)
     st.markdown(f'<p class="light-text"><strong>License:</strong> {license_text}</p>', unsafe_allow_html=True)
     
-    st.markdown("---")   # 对象之间干净分隔线
+    st.markdown("---")  
 
     # ============================================
 display_object(
