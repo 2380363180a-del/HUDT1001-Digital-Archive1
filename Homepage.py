@@ -121,7 +121,7 @@ except UnicodeDecodeError:
 df['Date'] = df['Date'].astype(str).str.strip()
 df['sort_key'] = pd.to_numeric(df['Date'].str.split('.').str[0], errors='coerce') + \
                  pd.to_numeric(df['Date'].str.split('.').str[1], errors='coerce').fillna(0) / 10
-df['display_date'] = df['Date'].str.split('.').str[0]   # 只显示纯年份
+df['display_date'] = df['Date'].str.split('.').str[0]
 df = df.sort_values(by='sort_key').reset_index(drop=True)
 
 # ==================== 显示每个对象 ====================
@@ -130,12 +130,11 @@ for idx, row in df.iterrows():
     title = str(row.get('Title', '')).strip()
     description = str(row.get('Description', '')).strip()
 
-    st.subheader(date_str)   # 只显示纯年份，例如 2023
+    st.subheader(date_str)   # 只显示纯年份
 
     if title and title.lower() not in ['na', 'nan', '']:
         folder = "Milestone Sources"
         found = False
-        
         for ext in ['.jpg', '.JPG', '.jpeg', '.JPEG', '.png', '.PNG', '.pdf']:
             filename = os.path.join(folder, title + ext)
             if os.path.exists(filename):
@@ -143,17 +142,18 @@ for idx, row in df.iterrows():
                     st.write(f"📄 PDF Document: {title + ext}")
                     st.markdown(f"[📥 点击查看完整 PDF]({filename})")
                 else:
-                    # 固定宽度显示（横向整齐）
-                    st.image(filename, width=700)
+                    try:
+                        st.image(filename, width=700)   # 固定宽度，横向显示
+                    except Exception as e:
+                        st.warning(f"⚠️ 图片加载失败: {title + ext} （可能损坏或格式不对）")
                 found = True
                 break
-                
         if not found:
             st.warning(f"⚠️ 未找到图片: {title}")
 
     st.markdown(description)
     st.divider()
 
-# 可选：完整元数据表
+# 可选：显示完整元数据表
 with st.expander("📊 查看完整 Dublin Core 元数据表"):
     st.dataframe(df, use_container_width=True)
