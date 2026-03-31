@@ -100,7 +100,8 @@ st.markdown("---")
 
 
 
-st.title("Shenzhen Development Milestones from 1980 to 2025")
+st.title("Shenzhen 1980-2025 Development Milestones")
+st.subheader("Interactive Chronological Archive")
 
 # ==================== 读取 CSV ====================
 csv_file = "Milestones.csv"
@@ -116,47 +117,43 @@ except UnicodeDecodeError:
         except UnicodeDecodeError:
             df = pd.read_csv(csv_file, encoding='gb18030')
 
-# ==================== 排序（保留 .1 .2 用于正确顺序） ====================
+# ==================== 排序（支持 2023.1、2023.2） ====================
 df['Date'] = df['Date'].astype(str).str.strip()
-
-# 用于排序的 key（支持 2023.1、2023.2）
 df['sort_key'] = pd.to_numeric(df['Date'].str.split('.').str[0], errors='coerce') + \
                  pd.to_numeric(df['Date'].str.split('.').str[1], errors='coerce').fillna(0) / 10
-
-# 用于显示的干净年份（去掉 .1 .2）
-df['display_date'] = df['Date'].str.split('.').str[0]
-
+df['display_date'] = df['Date'].str.split('.').str[0]   # 只显示纯年份
 df = df.sort_values(by='sort_key').reset_index(drop=True)
 
 # ==================== 显示每个对象 ====================
 for idx, row in df.iterrows():
-    date_str = str(row['display_date']).strip()      # ← 只显示纯年份
+    date_str = str(row['display_date']).strip()
     title = str(row.get('Title', '')).strip()
     description = str(row.get('Description', '')).strip()
 
-    st.header(date_str)   # 只显示年份，例如 2023
+    st.subheader(date_str)   # 只显示纯年份，例如 2023
 
-    # 如果有 Title 且不是 NA，才显示图片
     if title and title.lower() not in ['na', 'nan', '']:
         folder = "Milestone Sources"
         found = False
-        for ext in ['.jpg', '.JPG', '.png', '.PNG', '.pdf']:
+        
+        for ext in ['.jpg', '.JPG', '.jpeg', '.JPEG', '.png', '.PNG', '.pdf']:
             filename = os.path.join(folder, title + ext)
             if os.path.exists(filename):
                 if ext.lower() == '.pdf':
                     st.write(f"📄 PDF Document: {title + ext}")
-                    st.markdown(f"[📥 下载 PDF]({filename})")
+                    st.markdown(f"[📥 点击查看完整 PDF]({filename})")
                 else:
-                    st.image(filename, use_column_width=True)
+                    # 固定宽度显示（横向整齐）
+                    st.image(filename, width=700)
                 found = True
                 break
+                
         if not found:
             st.warning(f"⚠️ 未找到图片: {title}")
 
     st.markdown(description)
     st.divider()
 
-# 可选：显示完整元数据表
+# 可选：完整元数据表
 with st.expander("📊 查看完整 Dublin Core 元数据表"):
     st.dataframe(df, use_container_width=True)
-
