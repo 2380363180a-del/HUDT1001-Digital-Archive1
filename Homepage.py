@@ -3,6 +3,7 @@ import base64
 from PIL import Image
 import os 
 import json
+import pandas as pd
 import streamlit.components.v1 as components
 st.write("""# Shenzhen 1980-2025 Urban Development Digital Archive""")
 
@@ -130,5 +131,67 @@ st.image("pages/Shenzhen1979.png")
 st.write("On March 5, 1979, the State Council of the People's Republic of China issued Document No. [1979] 63, officially approving the establishment of Shenzhen (formerly Bao'an County), marking the legal starting point for Shenzhen's transformation from a border town to a modern city, and paving the way for it to be designated as China's first special economic zone in 1980.")
 
 st.markdown("---")
+
+
+
+
+
+st.set_page_config(page_title="Shenzhen 1980-2025 Digital Archive", layout="wide")
+
+st.title("Shenzhen 1980-2025 Urban Development Digital Archive")
+st.subheader("Interactive Chronological Archive")
+
+# ==================== 读取 CSV（支持中文编码） ====================
+csv_file = "Milestones.csv"
+
+try:
+    df = pd.read_csv(csv_file, encoding='utf-8-sig')
+except UnicodeDecodeError:
+    try:
+        df = pd.read_csv(csv_file, encoding='utf-8')
+    except UnicodeDecodeError:
+        try:
+            df = pd.read_csv(csv_file, encoding='gbk')
+        except UnicodeDecodeError:
+            df = pd.read_csv(csv_file, encoding='gb18030')
+
+# ==================== 按 Date 排序（支持 2023.1、2023.2 这种格式） ====================
+df['Date'] = df['Date'].astype(str).str.strip()
+df['sort_key'] = pd.to_numeric(df['Date'].str.split('.').str[0], errors='coerce') + \
+                 pd.to_numeric(df['Date'].str.split('.').str[1], errors='coerce').fillna(0) / 10
+df = df.sort_values(by='sort_key').reset_index(drop=True)
+
+# ==================== 自动显示每个对象 ====================
+for idx, row in df.iterrows():
+    date_str = str(row['Date']).strip()
+    title = str(row['Title']).strip() if pd.notna(row['Title']) else ""
+    description = str(row['Description']).strip()
+
+    st.subheader(date_str)   # ← Date 作为 subheader
+
+    # 如果 Title 不为空，才尝试显示图片
+    if title and title.lower() != "na":
+        folder = "Milestone Sources"
+        found = False
+        for ext in ['.jpg', '.JPG', '.png', '.PNG', '.pdf']:
+            filename = os.path.join(folder, title + ext)
+            if os.path.exists(filename):
+                if ext.lower() == '.pdf':
+                    st.write(f"📄 PDF Document: {title + ext}")
+                    st.markdown(f"[📥 下载 PDF]({filename})")
+                else:
+                    st.image(filename, use_column_width=True)   # 横向铺满
+                found = True
+                break
+        if not found:
+            st.warning(f"⚠️ 未找到图片: {title}")
+    
+    # 显示描述
+    st.markdown(description)
+    st.divider()
+
+# 可选：显示完整元数据表
+with st.expander("📊 查看完整 Dublin Core 元数据表"):
+    st.dataframe(df, use_container_width=True)
 
 
