@@ -141,7 +141,7 @@ st.title("Shenzhen 1980-2025 Urban Development Digital Archive")
 st.subheader("Interactive Chronological Archive")
 
 # 读取你的 CSV
-df = pd.read_csv("SZ DevelopmentDC Metadata Schema.csv", encoding='utf-8-sig')
+df = pd.read_csv("SZ DevelopmentDC Metadata Schema.csv")
 
 # 循环每一行（从第 0 行开始，但跳过表头第 1 行）
 for idx, row in df.iterrows():
