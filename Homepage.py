@@ -160,28 +160,42 @@ for idx, row in df.iterrows():
 st.title("Map of Shenzhen 1979 — 2020")
 st.subheader("Interactive Historical Timeline")
 
-# 年份列表（和原来完全一致）
+# ==================== 年份列表 ====================
 available_years = [1979] + list(range(1984, 2021))
 
-# 用 select_slider（比普通 slider 更适合非连续年份）
-selected_year = st.select_slider(
-    "Select Year",
-    options=available_years,
-    value=2000   # 默认年份，你可以改成你喜欢的
+# ==================== 预加载所有图片（缓存） ====================
+@st.cache_data
+def load_images():
+    img_dict = {}
+    for year in available_years:
+        path = f"images/{year}.jpg"
+        if os.path.exists(path):
+            img_dict[year] = path
+        else:
+            img_dict[year] = None
+    return img_dict
+
+images = load_images()
+
+# ==================== 实时滑块（拖动时会更新） ====================
+selected_year = st.slider(
+    "选择年份",
+    min_value=min(available_years),
+    max_value=max(available_years),
+    value=2000,
+    step=1
 )
 
-# 大字体显示年份（和原来 HTML 效果很接近）
-st.markdown(f"<h1 style='text-align: center; color: #FAFAFA; margin-bottom: 10px;'>{selected_year}</h1>", unsafe_allow_html=True)
+# 大字体显示当前年份
+st.markdown(f"<h1 style='text-align:center; color:#FAFAFA; margin:10px 0;'>{selected_year}</h1>", unsafe_allow_html=True)
 
 # 显示图片
-image_path = f"images/{selected_year}.jpg"
-
-if os.path.exists(image_path):
-    st.image(image_path, use_column_width=True)
+if images.get(selected_year):
+    st.image(images[selected_year], use_column_width=True)
 else:
-    st.warning("📸 The image for this year is not yet available in the archive.")
+    st.warning("📸 该年份的图片暂未收录")
 
-# 显示 caption
+# 显示说明文字
 st.caption(f"Shenzhen in the year {selected_year}")
 
 st.markdown("---")
