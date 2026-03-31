@@ -130,3 +130,48 @@ st.image("pages/Shenzhen1979.png")
 st.write("On March 5, 1979, the State Council of the People's Republic of China issued Document No. [1979] 63, officially approving the establishment of Shenzhen (formerly Bao'an County), marking the legal starting point for Shenzhen's transformation from a border town to a modern city, and paving the way for it to be designated as China's first special economic zone in 1980.")
 
 st.markdown("---")
+
+
+import pandas as pd
+import os
+
+st.set_page_config(page_title="Shenzhen 1980-2025 Digital Archive", layout="wide")
+
+st.title("Shenzhen 1980-2025 Urban Development Digital Archive")
+st.subheader("Interactive Chronological Archive")
+
+# 读取你的 CSV
+df = pd.read_csv("SZ DevelopmentDC Metadata Schema.csv")
+
+# 循环每一行（从第 0 行开始，但跳过表头第 1 行）
+for idx, row in df.iterrows():
+    title = str(row['Title']).strip()
+    description = str(row['Description']).strip()
+    
+    st.subheader(f"{idx+1}. {title}")
+    
+    # 自动尝试几种常见后缀
+    found = False
+    for ext in ['.jpg', '.JPG', '.png', '.PNG', '.pdf']:
+        # 构造文件名（Title + 后缀）
+        filename = title + ext
+        
+        if os.path.exists(filename):
+            if ext.lower() == '.pdf':
+                st.write(f"📄 PDF Document: {filename}")
+                st.markdown(f"[📥 下载 PDF]({filename})")
+            else:
+                st.image(filename, use_column_width=True)
+            found = True
+            break
+    
+    if not found:
+        st.warning(f"⚠️ 图片未找到: {title}（已尝试 .jpg / .JPG / .png / .pdf）")
+    
+    # 显示描述
+    st.write(description)
+    st.divider()   # 分隔线，让每个对象更清晰
+
+# 可选：显示完整元数据表（方便检查）
+with st.expander("📊 查看完整 Dublin Core 元数据表"):
+    st.dataframe(df, use_container_width=True)
