@@ -43,10 +43,7 @@ import base64
 import json
 import streamlit.components.v1 as components
 
-st.subheader("Time Slider")
 st.title("Shenzhen: 45 Years of Transformation")
-st.divider()
-
 # 2. 准备数据
 available_years = [1979] + list(range(1984, 2021))
 
