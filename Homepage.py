@@ -133,22 +133,30 @@ st.markdown("---")
 
 
 
+import streamlit as st
+import pandas as pd
+import os
+
 st.set_page_config(page_title="Shenzhen 1980-2025 Digital Archive", layout="wide")
 
 st.title("Shenzhen 1980-2025 Urban Development Digital Archive")
 st.subheader("Interactive Chronological Archive")
 
 # ==================== 读取 CSV（解决中文编码问题） ====================
+csv_file = "SZ DevelopmentDC Metadata Schema.csv"
+
 try:
-    df = pd.read_csv("SZ DevelopmentDC Metadata Schema.csv", encoding='utf-8-sig')
+    df = pd.read_csv(csv_file, encoding='utf-8-sig')
 except UnicodeDecodeError:
     try:
-        df = pd.read_csv("SZ DevelopmentDC Metadata Schema.csv", encoding='utf-8')
+        df = pd.read_csv(csv_file, encoding='utf-8')
     except UnicodeDecodeError:
         try:
-            df = pd.read_csv("SZ DevelopmentDC Metadata Schema.csv", encoding='gbk')
+            df = pd.read_csv(csv_file, encoding='gbk')
         except UnicodeDecodeError:
-            df = pd.read_csv("SZ DevelopmentDC Metadata Schema.csv", encoding='gb18030')
+            df = pd.read_csv(csv_file, encoding='gb18030')
+
+st.success(f"✅ 成功读取 CSV，共 {len(df)} 个对象")
 
 # ==================== 自动显示每个对象 ====================
 for idx, row in df.iterrows():
@@ -157,11 +165,12 @@ for idx, row in df.iterrows():
     
     st.subheader(f"{idx+1}. {title}")
     
-    # 自动在 Milestone Sources 文件夹里找图片
+    # 在 Milestone Sources 文件夹里找图片
+    folder = "Milestone Sources"
     found = False
+    
     for ext in ['.jpg', '.JPG', '.png', '.PNG', '.pdf']:
-        filename = os.path.join("Milestone Sources", title + ext)
-        
+        filename = os.path.join(folder, title + ext)
         if os.path.exists(filename):
             if ext.lower() == '.pdf':
                 st.write(f"📄 PDF Document: {title + ext}")
@@ -176,7 +185,7 @@ for idx, row in df.iterrows():
     
     # 显示描述
     st.write(description)
-    st.divider()   # 分隔线
+    st.divider()
 
 # 可选：显示完整元数据表
 with st.expander("📊 查看完整 Dublin Core 元数据表"):
