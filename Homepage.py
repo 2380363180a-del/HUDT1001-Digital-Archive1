@@ -163,11 +163,13 @@ except UnicodeDecodeError:
 # ==================== 关键修复：严格按 Date 从小到大排序 ====================
 df['Date'] = df['Date'].astype(str).str.strip()
 
-# 把 "2023.1" 转为 2023.1，把 "1979" 转为 1979.0
-df['sort_key'] = pd.to_numeric(df['Date'], errors='coerce')
+# 提取年份部分（支持 1979、2023.1、2023.2 等格式）
+df['year'] = df['Date'].str.split('.').str[0].astype(float)
+df['sub'] = df['Date'].str.split('.').str[1].fillna('0').astype(float)
+df['sort_key'] = df['year'] + df['sub'] / 10
 
-# 如果有无法转成数字的，就放到最后
-df = df.sort_values(by='sort_key', na_position='last').reset_index(drop=True)
+# 排序（1979 一定在最前面）
+df = df.sort_values(by='sort_key').reset_index(drop=True)
 
 # ==================== 显示每个对象 ====================
 for idx, row in df.iterrows():
@@ -175,9 +177,8 @@ for idx, row in df.iterrows():
     title = str(row.get('Title', '')).strip()
     description = str(row.get('Description', '')).strip()
 
-    st.subheader(date_str)                     # Date 作为标题
+    st.subheader(date_str)   # Date 作为标题
 
-    # 如果有 Title 且不是 NA，才显示图片
     if title and title.lower() not in ['na', 'nan', '']:
         folder = "Milestone Sources"
         found = False
@@ -186,7 +187,7 @@ for idx, row in df.iterrows():
             if os.path.exists(filename):
                 if ext.lower() == '.pdf':
                     st.write(f"📄 PDF: {title + ext}")
-                    st.markdown(f"[下载 PDF]({filename})")
+                    st.markdown(f"[📥 下载 PDF]({filename})")
                 else:
                     st.image(filename, use_column_width=True)
                 found = True
@@ -199,6 +200,6 @@ for idx, row in df.iterrows():
 
 # 可选：显示完整表格
 with st.expander("📊 查看完整元数据表"):
-    st.dataframe(df, use_container_width=True)
+    st.dataframe(df[['Date', 'Title', 'Description']], use_container_width=True)
 
 
