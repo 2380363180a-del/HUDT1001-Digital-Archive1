@@ -116,53 +116,48 @@ st.title("Shenzhen 1980-2025 Development Milestones")
 
 st.markdown("---")
 
-col1, col2 = st.columns([1, 1.8]) 
-
-with col1:
-    st.image("Milestone Sources/State Council Document No. [1979] 63.png", 
-             use_container_width=True, 
-             caption="1979 • State Council Document")  
-
-with col2:
-    st.markdown("### 1979")  
-    st.markdown("#### Shenzhen Municipality was Officially Established")  
+def display_object(year, title, description, image_path, source, license_text, caption=""):
+    st.markdown('<div class="object-card">', unsafe_allow_html=True)
     
- 
-    st.markdown("""
-    **Description:**  
+    col1, col2 = st.columns([2, 3]) 
     
-    """)
+    with col1:
+        st.image(image_path, 
+                 use_container_width=True, 
+                 caption=caption)
     
-    st.markdown("""
-    ---
-    **Source:** 
+    with col2:
+        st.markdown(f"### {year}")
+        st.markdown(f"#### {title}")
+        
+        st.markdown("**Description:**")
+        st.write(description)                  
+        
+        st.markdown("---")
+        st.markdown(f"**Source:** {source}")
+        st.markdown(f"**License:** {license_text}")
     
-    **License:** 
-    """)
-
+    st.markdown('</div>', unsafe_allow_html=True)
     st.markdown("---")
 
+    # ====================== object 1 ======================
+display_object(
+    year="1979",
+    title="Shenzhen Municipality was Officially Established",
+    description="The State Council of the People's Republic of China issued Document No. [1979] 63, officially establishing Shenzhen Municipality as a prefecture-level city.",
+    image_path="Milestone Sources/State Council Document No. [1979] 63.png",
+    source="Wikimedia Commons - State Council Document No. [1979] 63",
+    license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication",
+    caption="1979 • State Council Document"
+)
 
-col1, col2 = st.columns([1, 1.8]) 
-
-with col1:
-    st.image("Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg", 
-             use_container_width=True, 
-             caption="subject")  
-
-with col2:
-    st.markdown("### Year")  
-    st.markdown("#### Title")  
-    
- 
-    st.markdown("""
-    **Description:**  
-    
-    """)
-    
-    st.markdown("""
-    ---
-    **Source:** 
-    
-    **License:** 
-    """)
+# ====================== object 2 ======================
+display_object(
+    year="1980",
+    title="Write your title here...",
+    description="Write your one-sentence description here (must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="Write source link here",
+    license_text="Write license statement here",
+    caption="1980 • Your caption"
+)
