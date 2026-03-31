@@ -114,7 +114,6 @@ st.markdown("---")
 
 st.title("Shenzhen 1980-2025 Development Milestones")
 
-
 st.markdown("""
 <style>
     .stApp { background-color: #0e1117; color: #fafafa; }
@@ -132,19 +131,14 @@ st.markdown("""
 def display_object(year, title, description, image_path, source, license_text, caption=""):
     st.markdown(f"### {year}")
     st.markdown(f"#### {title}")
-    
-    # 图片（紧跟标题下方）
     st.image(image_path, use_container_width=True, caption=caption)
-    
     # Description
     st.markdown("**Description:**")
     st.write(description)                 
     st.markdown("---")  
     st.markdown(f'<p class="light-text"><strong>Source:</strong> {source}</p>', unsafe_allow_html=True)
     st.markdown(f'<p class="light-text"><strong>License:</strong> {license_text}</p>', unsafe_allow_html=True)
-    
     st.markdown("---")  
-
     # ============================================
 display_object(
     year="1979",
