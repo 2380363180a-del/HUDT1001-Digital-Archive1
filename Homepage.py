@@ -123,3 +123,30 @@ with col2:
     
     **License:** 
     """)
+
+    st.markdown("---")
+
+
+col1, col2 = st.columns([1, 1.8]) 
+
+with col1:
+    st.image("Milestone Sources/State Council Document No. [1979] 63.png", 
+             use_container_width=True, 
+             caption="1979 • State Council Document")  
+
+with col2:
+    st.markdown("### Year")  
+    st.markdown("#### Title")  
+    
+ 
+    st.markdown("""
+    **Description:**  
+    
+    """)
+    
+    st.markdown("""
+    ---
+    **Source:** 
+    
+    **License:** 
+    """)
