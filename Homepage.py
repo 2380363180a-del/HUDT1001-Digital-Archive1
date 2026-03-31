@@ -154,6 +154,34 @@ for idx, row in df.iterrows():
     st.markdown(description)
     st.divider()
 
-# 可选：显示完整元数据表
-with st.expander("📊 查看完整 Dublin Core 元数据表"):
-    st.dataframe(df, use_container_width=True)
+
+
+
+st.title("Map of Shenzhen 1979 — 2020")
+st.subheader("Interactive Historical Timeline")
+
+# 年份列表（和原来完全一致）
+available_years = [1979] + list(range(1984, 2021))
+
+# 用 select_slider（比普通 slider 更适合非连续年份）
+selected_year = st.select_slider(
+    "Select Year",
+    options=available_years,
+    value=2000   # 默认年份，你可以改成你喜欢的
+)
+
+# 大字体显示年份（和原来 HTML 效果很接近）
+st.markdown(f"<h1 style='text-align: center; color: #FAFAFA; margin-bottom: 10px;'>{selected_year}</h1>", unsafe_allow_html=True)
+
+# 显示图片
+image_path = f"images/{selected_year}.jpg"
+
+if os.path.exists(image_path):
+    st.image(image_path, use_column_width=True)
+else:
+    st.warning("📸 The image for this year is not yet available in the archive.")
+
+# 显示 caption
+st.caption(f"Shenzhen in the year {selected_year}")
+
+st.markdown("---")
