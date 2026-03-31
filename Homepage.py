@@ -166,7 +166,7 @@ display_object(
     year="year",
     title="title",
     description="description(must match Excel)...",
-    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    image_path="Milestone Sources/Guomao Building (International Trade Centre).jpg",         
     source="source link",
     license_text="license statement",
     caption="caption"
@@ -176,7 +176,7 @@ display_object(
     year="year",
     title="title",
     description="description(must match Excel)...",
-    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    image_path="Milestone Sources/Shenzhen Stock Exchange Launch.jpg",         
     source="source link",
     license_text="license statement",
     caption="caption"
@@ -186,7 +186,7 @@ display_object(
     year="year",
     title="title",
     description="description(must match Excel)...",
-    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    image_path="Milestone Sources/Shenzhen Bao’an International Airport Opening.JPG",         
     source="source link",
     license_text="license statement",
     caption="caption"
@@ -196,7 +196,7 @@ display_object(
     year="year",
     title="title",
     description="description(must match Excel)...",
-    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    image_path="Milestone Sources/Shun Hing Square (Di Wang Tower).jpg",         
     source="source link",
     license_text="license statement",
     caption="caption"
