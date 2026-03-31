@@ -136,12 +136,13 @@ st.markdown("---")
 
 
 
+
 st.set_page_config(page_title="Shenzhen 1980-2025 Digital Archive", layout="wide")
 
 st.title("Shenzhen 1980-2025 Urban Development Digital Archive")
 st.subheader("Interactive Chronological Archive")
 
-# ==================== 读取 CSV（支持中文编码） ====================
+# ==================== 读取 CSV（解决中文编码） ====================
 csv_file = "Milestones.csv"
 
 try:
@@ -155,22 +156,23 @@ except UnicodeDecodeError:
         except UnicodeDecodeError:
             df = pd.read_csv(csv_file, encoding='gb18030')
 
-# ==================== 按 Date 排序（支持 2023.1、2023.2 这种格式） ====================
+# ==================== 关键改进：按 Date 从小到大排序 ====================
+# 支持 1979、1982、2023.1、2023.2 等格式
 df['Date'] = df['Date'].astype(str).str.strip()
-df['sort_key'] = pd.to_numeric(df['Date'].str.split('.').str[0], errors='coerce') + \
-                 pd.to_numeric(df['Date'].str.split('.').str[1], errors='coerce').fillna(0) / 10
+df['sort_key'] = pd.to_numeric(df['Date'], errors='coerce')   # 把 2023.1 转为 2023.1，2023 转为 2023.0
 df = df.sort_values(by='sort_key').reset_index(drop=True)
 
 # ==================== 自动显示每个对象 ====================
 for idx, row in df.iterrows():
     date_str = str(row['Date']).strip()
-    title = str(row['Title']).strip() if pd.notna(row['Title']) else ""
-    description = str(row['Description']).strip()
+    title = str(row.get('Title', '')).strip()
+    description = str(row.get('Description', '')).strip()
 
-    st.subheader(date_str)   # ← Date 作为 subheader
+    # Date 作为 subheader
+    st.subheader(date_str)
 
-    # 如果 Title 不为空，才尝试显示图片
-    if title and title.lower() != "na":
+    # 如果 Title 不是 NA/空值，才尝试显示图片
+    if title and title.lower() != "na" and title.lower() != "nan":
         folder = "Milestone Sources"
         found = False
         for ext in ['.jpg', '.JPG', '.png', '.PNG', '.pdf']:
@@ -185,12 +187,12 @@ for idx, row in df.iterrows():
                 break
         if not found:
             st.warning(f"⚠️ 未找到图片: {title}")
-    
+
     # 显示描述
     st.markdown(description)
     st.divider()
 
-# 可选：显示完整元数据表
+# 可选：完整元数据表
 with st.expander("📊 查看完整 Dublin Core 元数据表"):
     st.dataframe(df, use_container_width=True)
 
