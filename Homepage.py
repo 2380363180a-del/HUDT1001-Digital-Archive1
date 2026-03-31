@@ -12,8 +12,6 @@ st.write("This digital archive documents the **45-year transformation of Shenzhe
 
 st.markdown("---")
 
-st.title("Map of Shenzhen 1979 — 2020")
-
 available_years = [1979] + list(range(1984, 2021))
 
 def get_images_base64():
