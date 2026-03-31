@@ -50,7 +50,7 @@ st.divider()
 selected_year = st.slider(
     "Select a Year:", 
     min_value=1979, 
-    max_value=2024, 
+    max_value=2020, 
     value=1979, 
     step=1
 )
