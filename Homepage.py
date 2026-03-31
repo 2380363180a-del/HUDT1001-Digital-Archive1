@@ -140,7 +140,7 @@ def display_object(year, title, description, image_path, source, license_text, c
     st.markdown('</div>', unsafe_allow_html=True)
     st.markdown("---")
 
-    # ====================== object 1 ======================
+    # ============================================
 display_object(
     year="1979",
     title="Shenzhen Municipality was Officially Established",
@@ -151,13 +151,13 @@ display_object(
     caption="1979 • State Council Document"
 )
 
-# ====================== object 2 ======================
+# ============================================
 display_object(
-    year="1980",
-    title="Write your title here...",
-    description="Write your one-sentence description here (must match Excel)...",
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
     image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
-    source="Write source link here",
-    license_text="Write license statement here",
-    caption="1980 • Your caption"
+    source="source link",
+    license_text="license statement",
+    caption="caption"
 )
