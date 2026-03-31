@@ -133,9 +133,7 @@ def display_object(year, title, description, image_path, source, license_text, c
     st.markdown(f"#### {title}")
     st.image(image_path, use_container_width=True, caption=caption)
     # Description
-    st.markdown("**Description:**")
     st.write(description)                 
-    st.markdown("---")  
     st.markdown(f'<p class="light-text"><strong>Source:</strong> {source}</p>', unsafe_allow_html=True)
     st.markdown(f'<p class="light-text"><strong>License:</strong> {license_text}</p>', unsafe_allow_html=True)
     st.markdown("---")  
