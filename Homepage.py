@@ -114,31 +114,62 @@ st.markdown("---")
 
 st.title("Shenzhen 1980-2025 Development Milestones")
 
-st.markdown("---")
+
+# 全局暗黑学术风美化
+st.markdown("""
+<style>
+    .stApp { background-color: #0e1117; color: #fafafa; }
+    .object-card { 
+        background-color: #161b22; 
+        padding: 24px; 
+        border-radius: 16px; 
+        box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+        margin-bottom: 40px;
+    }
+    img { border-radius: 12px; }
+    h3 { color: #58a6ff !important; margin-bottom: 4px; }
+    .stMarkdown { margin-bottom: 0; }
+</style>
+""", unsafe_allow_html=True)
 
 def display_object(year, title, description, image_path, source, license_text, caption=""):
     st.markdown('<div class="object-card">', unsafe_allow_html=True)
     
-    col1, col2 = st.columns([2, 3]) 
+    # ==================== 智能动态比例 ====================
+    try:
+        img = Image.open(image_path)
+        w, h = img.size
+        aspect = w / h
+        
+        if aspect > 2.0:      # 极宽横图
+            ratios = [3.8, 2.0]
+        elif aspect > 1.4:    # 普通横图
+            ratios = [3.0, 2.5]
+        elif aspect < 0.65:   # 极竖图
+            ratios = [1.2, 4.2]
+        elif aspect < 0.9:    # 普通竖图
+            ratios = [1.5, 3.8]
+        else:                 # 方图或接近
+            ratios = [2.0, 3.0]
+    except:
+        ratios = [2, 3]       # 读取失败时的备用
+    
+    col1, col2 = st.columns(ratios)
     
     with col1:
-        st.image(image_path, 
-                 use_container_width=True, 
-                 caption=caption)
+        st.image(image_path, use_container_width=True, caption=caption)
     
     with col2:
         st.markdown(f"### {year}")
         st.markdown(f"#### {title}")
-        
         st.markdown("**Description:**")
-        st.write(description)                  
-        
+        st.write(description)                    # 必须和Excel完全一致
         st.markdown("---")
         st.markdown(f"**Source:** {source}")
         st.markdown(f"**License:** {license_text}")
     
     st.markdown('</div>', unsafe_allow_html=True)
-    st.markdown("---")
+    st.markdown("---")   # 对象之间分隔线
 
     # ============================================
 display_object(
