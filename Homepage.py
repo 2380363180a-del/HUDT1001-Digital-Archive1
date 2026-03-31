@@ -50,6 +50,14 @@ st.divider()
 available_years = [1979] + list(range(1984, 2021))
 
 # 补全你代码中被截断的 captions 字典
+captions = {
+    1979: "1979: Bao'an County is promoted to Shenzhen City.",
+    1980: "1980: Shenzhen becomes China's first Special Economic Zone.",
+    1990: "1990: The Shenzhen Stock Exchange is established.",
+    1999: "1999: The first China High-Tech Fair is held in Shenzhen.",
+    2010: "2010: The Special Economic Zone is expanded to cover the whole city.",
+    2020: "2020: Shenzhen celebrates the 40th anniversary of the SEZ."
+}
 # 3. 核心黑科技：图片 Base64 预加载
 @st.cache_data
 def get_images_base64():
