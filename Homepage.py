@@ -47,12 +47,11 @@ st.divider()
 
 # 3. Interactive Timeline Slider
 # 1979 is widely considered the starting point of Shenzhen's rapid development
-selected_year = st.slider(
+available_years = [1979] + list(range(1984, 2025))
+selected_year = st.select_slider(
     "Select a Year:", 
-    min_value=1979, 
-    max_value=2020, 
-    value=1979, 
-    step=1
+    options=available_years, 
+    value=1979
 )
 
 # 4. Data Dictionary for Captions (Optional but recommended)
