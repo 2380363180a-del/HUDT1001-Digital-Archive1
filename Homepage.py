@@ -118,36 +118,34 @@ st.title("Shenzhen 1980-2025 Development Milestones")
 st.markdown("""
 <style>
     .stApp { background-color: #0e1117; color: #fafafa; }
-    .object-card { 
-        background-color: #161b22; 
-        padding: 28px; 
-        border-radius: 16px; 
-        box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-        margin-bottom: 40px;
-    }
     img { border-radius: 12px; }
     h3 { color: #58a6ff !important; margin-bottom: 4px; }
-    .stMarkdown { margin-bottom: 0; }
+    .light-text {
+        color: #aaaaaa !important;
+        opacity: 0.75;
+        font-size: 0.95em;
+        margin-top: 8px;
+    }
 </style>
 """, unsafe_allow_html=True)
 
 def display_object(year, title, description, image_path, source, license_text, caption=""):
-    st.markdown('<div class="object-card">', unsafe_allow_html=True)
-    
-    
-    # 文字部分在下
+    # Year + Title（放在最上面）
     st.markdown(f"### {year}")
     st.markdown(f"#### {title}")
+    
+    # 图片（紧跟标题下方）
     st.image(image_path, use_container_width=True, caption=caption)
+    
+    # Description
     st.markdown("**Description:**")
     st.write(description)                    # ← 必须和Excel里Description一字不差
     
-    st.markdown("---")
-    st.markdown(f"**Source:** {source}")
-    st.markdown(f"**License:** {license_text}")
+    # Source 和 License（浅灰 + 透明，不突出）
+    st.markdown(f'<p class="light-text"><strong>Source:</strong> {source}</p>', unsafe_allow_html=True)
+    st.markdown(f'<p class="light-text"><strong>License:</strong> {license_text}</p>', unsafe_allow_html=True)
     
-    st.markdown('</div>', unsafe_allow_html=True)
-    st.markdown("---")   # 每个对象之间的大分隔线
+    st.markdown("---")   # 对象之间干净分隔线
 
     # ============================================
 display_object(
