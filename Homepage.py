@@ -134,13 +134,11 @@ st.markdown("""
 def display_object(year, title, description, image_path, source, license_text, caption=""):
     st.markdown('<div class="object-card">', unsafe_allow_html=True)
     
-    # 图片在上（全宽，自动适应任何比例）
-    st.image(image_path, use_container_width=True, caption=caption)
     
     # 文字部分在下
     st.markdown(f"### {year}")
     st.markdown(f"#### {title}")
-    
+    st.image(image_path, use_container_width=True, caption=caption)
     st.markdown("**Description:**")
     st.write(description)                    # ← 必须和Excel里Description一字不差
     
