@@ -98,6 +98,7 @@ components.html(html_code, height=750)
 
 st.markdown("---")
 
+
 import streamlit as st
 import pandas as pd
 import os
@@ -107,7 +108,7 @@ st.set_page_config(page_title="Shenzhen 1980-2025 Digital Archive", layout="wide
 st.title("Shenzhen 1980-2025 Urban Development Digital Archive")
 st.subheader("Interactive Chronological Archive")
 
-# ==================== 读取 CSV（支持中文编码） ====================
+# ==================== 读取 CSV ====================
 csv_file = "Milestones.csv"
 
 try:
@@ -121,22 +122,28 @@ except UnicodeDecodeError:
         except UnicodeDecodeError:
             df = pd.read_csv(csv_file, encoding='gb18030')
 
-# ==================== 按 Date 排序（支持 2023.1、2023.2 这种格式） ====================
+# ==================== 排序（保留 .1 .2 用于正确顺序） ====================
 df['Date'] = df['Date'].astype(str).str.strip()
+
+# 用于排序的 key（支持 2023.1、2023.2）
 df['sort_key'] = pd.to_numeric(df['Date'].str.split('.').str[0], errors='coerce') + \
                  pd.to_numeric(df['Date'].str.split('.').str[1], errors='coerce').fillna(0) / 10
+
+# 用于显示的干净年份（去掉 .1 .2）
+df['display_date'] = df['Date'].str.split('.').str[0]
+
 df = df.sort_values(by='sort_key').reset_index(drop=True)
 
-# ==================== 自动显示每个对象 ====================
+# ==================== 显示每个对象 ====================
 for idx, row in df.iterrows():
-    date_str = str(row['Date']).strip()
-    title = str(row['Title']).strip() if pd.notna(row['Title']) else ""
-    description = str(row['Description']).strip()
+    date_str = str(row['display_date']).strip()      # ← 只显示纯年份
+    title = str(row.get('Title', '')).strip()
+    description = str(row.get('Description', '')).strip()
 
-    st.subheader(date_str)   # ← Date 作为 subheader
+    st.subheader(date_str)   # 只显示年份，例如 2023
 
-    # 如果 Title 不为空，才尝试显示图片
-    if title and title.lower() != "na":
+    # 如果有 Title 且不是 NA，才显示图片
+    if title and title.lower() not in ['na', 'nan', '']:
         folder = "Milestone Sources"
         found = False
         for ext in ['.jpg', '.JPG', '.png', '.PNG', '.pdf']:
@@ -146,13 +153,12 @@ for idx, row in df.iterrows():
                     st.write(f"📄 PDF Document: {title + ext}")
                     st.markdown(f"[📥 下载 PDF]({filename})")
                 else:
-                    st.image(filename, use_column_width=True)   # 横向铺满
+                    st.image(filename, use_column_width=True)
                 found = True
                 break
         if not found:
             st.warning(f"⚠️ 未找到图片: {title}")
-    
-    # 显示描述
+
     st.markdown(description)
     st.divider()
 
