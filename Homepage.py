@@ -130,9 +130,9 @@ with col2:
 col1, col2 = st.columns([1, 1.8]) 
 
 with col1:
-    st.image("Milestone Sources/State Council Document No. [1979] 63.png", 
+    st.image("Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg", 
              use_container_width=True, 
-             caption="1979 • State Council Document")  
+             caption="subject")  
 
 with col2:
     st.markdown("### Year")  
