@@ -99,14 +99,8 @@ components.html(html_code, height=750)
 st.markdown("---")
 
 
-import streamlit as st
-import pandas as pd
-import os
 
-st.set_page_config(page_title="Shenzhen 1980-2025 Digital Archive", layout="wide")
-
-st.title("Shenzhen 1980-2025 Urban Development Digital Archive")
-st.subheader("Interactive Chronological Archive")
+st.title("Shenzhen Development Milestones from 1980 to 2025")
 
 # ==================== 读取 CSV ====================
 csv_file = "Milestones.csv"
@@ -140,7 +134,7 @@ for idx, row in df.iterrows():
     title = str(row.get('Title', '')).strip()
     description = str(row.get('Description', '')).strip()
 
-    st.subheader(date_str)   # 只显示年份，例如 2023
+    st.header(date_str)   # 只显示年份，例如 2023
 
     # 如果有 Title 且不是 NA，才显示图片
     if title and title.lower() not in ['na', 'nan', '']:
