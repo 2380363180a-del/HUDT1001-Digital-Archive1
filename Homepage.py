@@ -132,14 +132,13 @@ st.write("On March 5, 1979, the State Council of the People's Republic of China 
 st.markdown("---")
 
 
-import pandas as pd
-import os
 
 st.set_page_config(page_title="Shenzhen 1980-2025 Digital Archive", layout="wide")
 
 st.title("Shenzhen 1980-2025 Urban Development Digital Archive")
 st.subheader("Interactive Chronological Archive")
 
+# ==================== 读取 CSV（解决中文编码问题） ====================
 try:
     df = pd.read_csv("SZ DevelopmentDC Metadata Schema.csv", encoding='utf-8-sig')
 except UnicodeDecodeError:
@@ -150,22 +149,22 @@ except UnicodeDecodeError:
             df = pd.read_csv("SZ DevelopmentDC Metadata Schema.csv", encoding='gbk')
         except UnicodeDecodeError:
             df = pd.read_csv("SZ DevelopmentDC Metadata Schema.csv", encoding='gb18030')
-# 循环每一行（从第 0 行开始，但跳过表头第 1 行）
+
+# ==================== 自动显示每个对象 ====================
 for idx, row in df.iterrows():
     title = str(row['Title']).strip()
     description = str(row['Description']).strip()
     
     st.subheader(f"{idx+1}. {title}")
     
-    # 自动尝试几种常见后缀
+    # 自动在 Milestone Sources 文件夹里找图片
     found = False
     for ext in ['.jpg', '.JPG', '.png', '.PNG', '.pdf']:
-        # 构造文件名（Title + 后缀）
-        filename = title + ext
+        filename = os.path.join("Milestone Sources", title + ext)
         
         if os.path.exists(filename):
             if ext.lower() == '.pdf':
-                st.write(f"📄 PDF Document: {filename}")
+                st.write(f"📄 PDF Document: {title + ext}")
                 st.markdown(f"[📥 下载 PDF]({filename})")
             else:
                 st.image(filename, use_column_width=True)
@@ -173,12 +172,12 @@ for idx, row in df.iterrows():
             break
     
     if not found:
-        st.warning(f"⚠️ 图片未找到: {title}（已尝试 .jpg / .JPG / .png / .pdf）")
+        st.warning(f"⚠️ 未找到图片: {title}（已尝试 .jpg / .JPG / .png / .pdf）")
     
     # 显示描述
     st.write(description)
-    st.divider()   # 分隔线，让每个对象更清晰
+    st.divider()   # 分隔线
 
-# 可选：显示完整元数据表（方便检查）
+# 可选：显示完整元数据表
 with st.expander("📊 查看完整 Dublin Core 元数据表"):
     st.dataframe(df, use_container_width=True)
