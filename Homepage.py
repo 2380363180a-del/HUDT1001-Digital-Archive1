@@ -56,7 +56,6 @@ st.divider()
 available_years = [1979] + list(range(1984, 2021))
 
 # 3. 核心黑科技：图片 Base64 预加
-@st.cache_data
 def get_images_base64():
     """将所有存在的图片一次性读取并转为 Base64，避免滑动时读取硬盘"""
     img_dict = {}
@@ -65,36 +64,24 @@ def get_images_base64():
         if os.path.exists(path):
             with open(path, "rb") as f:
                 encoded = base64.b64encode(f.read()).decode()
-                # 拼接成浏览器可以直接识别的图片数据格式
                 img_dict[year] = f"data:image/jpeg;base64,{encoded}"
         else:
             img_dict[year] = None
     return img_dict
-
-# 4. 生成给前端的数据
 with st.spinner("⏳ 正在打包历史影像，初次加载请稍候..."):
     images_b64 = get_images_base64()
-    
-    # 将 Python 字典转换为 JavaScript 可以识别的 JSON 字符串
     js_images = json.dumps(images_b64)
-    # 【修改点1】：统一把所有年份的说明写成 Shenzhen in the year xxxx
     js_captions = json.dumps({y: f"Shenzhen in the year {y}" for y in available_years})
     js_years = json.dumps(available_years)
 
-# 5. 构建原生 HTML/JS 组件 (实现毫秒级切换)
 html_code = f"""
 <!DOCTYPE html>
 <html>
 <head>
 <style>
     body {{ font-family: sans-serif; text-align: center; color: #FAFAFA; background-color: transparent; margin: 0; padding: 0; }}
-    
-    /* 【修改点2】：将年份数字颜色改为白色，并增加了一点阴影提升质感 */
     #year-display {{ font-size: 2.5em; font-weight: 800; color: white; margin-bottom: 10px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }}
-    
-    /* 自定义滑动条样式 */
     #slider {{ width: 100%; margin: 20px 0; cursor: pointer; accent-color: #ff4b4b; height: 6px; }}
-    /* 图片容器 */
     #image-container {{ width: 100%; min-height: 400px; display: flex; align-items: center; justify-content: center; background-color: #1E1E1E; border-radius: 8px; overflow: hidden; }}
     #display-image {{ max-width: 100%; max-height: 600px; object-fit: contain; }}
     #caption-display {{ font-size: 1.1em; color: #ccc; margin-top: 15px; padding: 0 10px; }}
@@ -116,7 +103,6 @@ html_code = f"""
     <div id="caption-display">Loading...</div>
 
     <script>
-        // 接收来自 Python 的数据
         const images = {js_images};
         const captions = {js_captions};
         const years = {js_years};
@@ -131,9 +117,7 @@ html_code = f"""
         function updateView(index) {{
             const year = years[index];
             yearDisplay.innerText = year;
-            caption.innerText = captions[year]; // 直接调用统一格式的文本
-            
-            // 如果图片存在则显示，否则显示警告信息
+            caption.innerText = captions[year]; 
             if (images[year]) {{
                 img.src = images[year];
                 img.style.display = 'block';
@@ -143,11 +127,7 @@ html_code = f"""
                 noImgText.style.display = 'block';
             }}
         }}
-
-        // 页面加载时初始化第一张图
         updateView(slider.value);
-
-        // 监听滑块的实时拖动事件（核心：这是毫秒级响应的关键）
         slider.addEventListener('input', function() {{
             updateView(this.value);
         }});
@@ -155,8 +135,6 @@ html_code = f"""
 </body>
 </html>
 """
-
-# 6. 在 Streamlit 中渲染这个定制组件
 components.html(html_code, height=750)
 
 st.divider()
