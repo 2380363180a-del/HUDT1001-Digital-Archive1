@@ -87,6 +87,10 @@ else:
 st.divider()
 #end of timeline slider
 
+st.subheader("1980:The Establishment of Shenzhen Special Zone")
 st.image("pages/Shenzhen1979.png")
+st.write("On March 5, 1979, the State Council of the People's Republic of China issued Document No. [1979] 63, officially approving the establishment of Shenzhen (formerly Bao'an County), marking the legal starting point for Shenzhen's transformation from a border town to a modern city, and paving the way for it to be designated as China's first special economic zone in 1980.")
+
+st.markdown("---")
 
 
