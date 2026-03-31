@@ -114,11 +114,11 @@ with col2:
  
     st.markdown("""
     **Description:**  
-    The State Council of the People's Republic of China issued Document No. [1979] 63, officially establishing Shenzhen Municipality as a prefecture-level city.
+    
     """)
     
     st.markdown("""
     ---
-    **Source:** State Council of the People's Republic of China, Document No. [1979] 63 (via Wikimedia Commons)  
-    **License:** Creative Commons CC0 1.0 Universal Public Domain Dedication
+    **Source:** 
+    **License:** 
     """)
