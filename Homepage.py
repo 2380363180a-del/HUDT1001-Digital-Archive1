@@ -13,12 +13,10 @@ st.write("This digital archive documents the **45-year transformation of Shenzhe
 st.markdown("---")
 
 st.title("Map of Shenzhen 1979 — 2020")
-# 2. 准备数据
+
 available_years = [1979] + list(range(1984, 2021))
 
-# 3. 核心黑科技：图片 Base64 预加
 def get_images_base64():
-    """将所有存在的图片一次性读取并转为 Base64，避免滑动时读取硬盘"""
     img_dict = {}
     for year in available_years:
         path = f"images/{year}.jpg"
@@ -105,7 +103,6 @@ st.set_page_config(page_title="Shenzhen 1980-2025 Digital Archive", layout="wide
 st.title("Shenzhen 1980-2025 Urban Development Digital Archive")
 st.subheader("Interactive Chronological Archive")
 
-# ==================== 读取 CSV（解决中文编码） ====================
 csv_file = "Milestones.csv"
 
 try:
@@ -119,22 +116,17 @@ except UnicodeDecodeError:
         except UnicodeDecodeError:
             df = pd.read_csv(csv_file, encoding='gb18030')
 
-# ==================== 关键改进：按 Date 从小到大排序 ====================
-# 支持 1979、1982、2023.1、2023.2 等格式
 df['Date'] = df['Date'].astype(str).str.strip()
-df['sort_key'] = pd.to_numeric(df['Date'], errors='coerce')   # 把 2023.1 转为 2023.1，2023 转为 2023.0
+df['sort_key'] = pd.to_numeric(df['Date'], errors='coerce')   
 df = df.sort_values(by='sort_key').reset_index(drop=True)
 
-# ==================== 自动显示每个对象 ====================
 for idx, row in df.iterrows():
     date_str = str(row['Date']).strip()
     title = str(row.get('Title', '')).strip()
     description = str(row.get('Description', '')).strip()
 
-    # Date 作为 subheader
     st.subheader(date_str)
 
-    # 如果 Title 不是 NA/空值，才尝试显示图片
     if title and title.lower() != "na" and title.lower() != "nan":
         folder = "Milestone Sources"
         found = False
@@ -145,11 +137,11 @@ for idx, row in df.iterrows():
                     st.write(f"📄 PDF Document: {title + ext}")
                     st.markdown(f"[📥 下载 PDF]({filename})")
                 else:
-                    st.image(filename, use_column_width=True)   # 横向铺满
+                    st.image(filename, use_column_width=True) 
                 found = True
                 break
         if not found:
-            st.warning(f"⚠️ 未找到图片: {title}")
+            st.warning(f"")
 
     # 显示描述
     st.markdown(description)
