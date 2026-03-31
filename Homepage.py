@@ -96,6 +96,10 @@ components.html(html_code, height=750)
 
 st.markdown("---")
 
-
-
 st.title("Shenzhen 1980-2025 Development Milestones")
+
+st.markdown("---")
+
+st.header("1979")
+st.subheader("Shenzhen Municipality was Officially Established")
+st.image("Milestone Sources/State Council Document No. [1979] 63.png")
