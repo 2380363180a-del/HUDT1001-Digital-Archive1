@@ -83,6 +83,9 @@ with st.spinner("⏳ 正在打包历史影像，初次加载请稍候..."):
     js_captions = json.dumps({y: captions.get(y, f"Shenzhen in the year {y}.") for y in available_years})
     js_years = json.dumps(available_years)
 
+
+import os
+st.write("当前 images 文件夹里实际存在的文件有：", os.listdir("images/"))
 # 5. 构建原生 HTML/JS 组件 (实现毫秒级切换)
 html_code = f"""
 <!DOCTYPE html>
