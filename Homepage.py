@@ -5,6 +5,22 @@ import os
 import json
 import pandas as pd
 import streamlit.components.v1 as components
+
+st.markdown("""
+<style>
+    .stApp { background-color: #0e1117; color: #fafafa; }
+    .object-card { 
+        background-color: #161b22; 
+        padding: 20px; 
+        border-radius: 12px; 
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        margin-bottom: 30px;
+    }
+    img { border-radius: 8px; }
+    h3 { color: #58a6ff !important; }
+</style>
+""", unsafe_allow_html=True)
+
 st.write("""# Shenzhen 1980-2025 Urban Development Digital Archive""")
 
 st.subheader("Introduction")
