@@ -87,6 +87,6 @@ else:
 st.divider()
 #end of timeline slider
 
-
+st.image("pages/Shenzhen1979.png")
 
 
