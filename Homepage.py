@@ -140,9 +140,16 @@ st.set_page_config(page_title="Shenzhen 1980-2025 Digital Archive", layout="wide
 st.title("Shenzhen 1980-2025 Urban Development Digital Archive")
 st.subheader("Interactive Chronological Archive")
 
-# 读取你的 CSV
-df = pd.read_csv("SZ DevelopmentDC Metadata Schema.csv")
-
+try:
+    df = pd.read_csv("SZ DevelopmentDC Metadata Schema.csv", encoding='utf-8-sig')
+except UnicodeDecodeError:
+    try:
+        df = pd.read_csv("SZ DevelopmentDC Metadata Schema.csv", encoding='utf-8')
+    except UnicodeDecodeError:
+        try:
+            df = pd.read_csv("SZ DevelopmentDC Metadata Schema.csv", encoding='gbk')
+        except UnicodeDecodeError:
+            df = pd.read_csv("SZ DevelopmentDC Metadata Schema.csv", encoding='gb18030')
 # 循环每一行（从第 0 行开始，但跳过表头第 1 行）
 for idx, row in df.iterrows():
     title = str(row['Title']).strip()
