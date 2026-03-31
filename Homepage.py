@@ -106,3 +106,27 @@ st.image("Milestone Sources/State Council Document No. [1979] 63.png")
 st.write("Description")
 st.markdown("Source")
 st.markdown("License statement")
+
+col1, col2 = st.columns([1, 1.8])   # 左边图片，右边文字（比例可调）
+
+with col1:
+    st.image("Milestone Sources/State Council Document No. [1979] 63.png", 
+             use_container_width=True, 
+             caption="1979 • State Council Document")   # 小标题在图下方
+
+with col2:
+    st.markdown("### 1979")   # 年份大标题
+    st.markdown("#### Shenzhen Municipality was Officially Established")   # 事件标题
+    
+    # 核心描述（必须和你的 Excel 里 Description 一模一样）
+    st.markdown("""
+    **Description:**  
+    The State Council of the People's Republic of China issued Document No. [1979] 63, officially establishing Shenzhen Municipality as a prefecture-level city.
+    """)
+    
+    # Source 和 License（放在最下面，清晰醒目）
+    st.markdown("""
+    ---
+    **Source:** State Council of the People's Republic of China, Document No. [1979] 63 (via Wikimedia Commons)  
+    **License:** Creative Commons CC0 1.0 Universal Public Domain Dedication
+    """)
