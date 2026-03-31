@@ -94,3 +94,15 @@ st.write("On March 5, 1979, the State Council of the People's Republic of China 
 st.markdown("---")
 
 
+st.subheader("Shenzhen SEZ Regulations on Intelligent Connected Vehicles (2022)")
+
+st.components.v1.iframe(
+    "https://sf.sz.gov.cn/fggzywyb/content/mpost_11216374.html",
+    height=900,          # 可以根据需要调高或调低（800~1200 都行）
+    scrolling=True
+)
+
+# 可选：在下面再加一个外部链接按钮，方便老师直接打开原网页
+st.markdown("""
+[🔗 View the full official page on Shenzhen Justice Bureau website](https://sf.sz.gov.cn/fggzywyb/content/mpost_11216374.html)
+""", unsafe_allow_html=True)
