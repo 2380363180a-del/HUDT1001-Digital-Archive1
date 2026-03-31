@@ -161,3 +161,173 @@ display_object(
     license_text="license statement",
     caption="caption"
 )
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
+# ============================================
+display_object(
+    year="year",
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
+    source="source link",
+    license_text="license statement",
+    caption="caption"
+)
