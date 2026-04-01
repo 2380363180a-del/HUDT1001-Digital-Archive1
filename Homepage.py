@@ -219,7 +219,7 @@ display_object(
     image_path="Milestone Sources/Shenzhen Baoan International Airport Opening.JPG",         
     source="source link",
     license_text="license statement",
-    caption="caption"，
+    caption="caption",
     extra_sections=[
         ("Historical Significance", """historical significance...""")
     ]
