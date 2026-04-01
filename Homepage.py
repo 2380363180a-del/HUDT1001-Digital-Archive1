@@ -232,7 +232,10 @@ display_object(
     image_path="Milestone Sources/1996_Shun_Hing_Square_Complete.jpg",         
     source="source link",
     license_text="license statement",
-    caption="caption"
+    caption="caption",
+        extra_sections=[
+        ("Historical Significance", """historical significance...""")
+    ]
 )
 # ============================================
 display_object(
@@ -252,7 +255,10 @@ display_object(
     image_path="Milestone Sources/1999_First_China_HiTech_Fair.jpg",         
     source="source link",
     license_text="license statement",
-    caption="caption"
+    caption="caption",
+        extra_sections=[
+        ("Historical Significance", """historical significance...""")
+    ]
 )
 # ============================================
 display_object(
@@ -262,7 +268,10 @@ display_object(
     image_path="Milestone Sources/2000_Shenzhen_University_Town_Founding.jpg",         
     source="source link",
     license_text="license statement",
-    caption="caption"
+    caption="caption",
+        extra_sections=[
+        ("Historical Significance", """historical significance...""")
+    ]
 )
 # ============================================
 display_object(
@@ -272,7 +281,10 @@ display_object(
     image_path="Milestone Sources/2004_Shenzhen_Metro_Line_1_Opening.jpeg",         
     source="source link",
     license_text="license statement",
-    caption="caption"
+    caption="caption",
+        extra_sections=[
+        ("Historical Significance", """historical significance...""")
+    ]
 )
 # ============================================
 display_object(
@@ -282,7 +294,10 @@ display_object(
     image_path="Milestone Sources/2006_DJI.png",         
     source="source link",
     license_text="license statement",
-    caption="caption"
+    caption="caption",
+        extra_sections=[
+        ("Historical Significance", """historical significance...""")
+    ]
 )
 # ============================================
 display_object(
@@ -292,7 +307,10 @@ display_object(
     image_path="Milestone Sources/2010_SEZ_Expansion_to_Entire_City.png",         
     source="source link",
     license_text="license statement",
-    caption="caption"
+    caption="caption",
+        extra_sections=[
+        ("Historical Significance", """historical significance...""")
+    ]
 )
 # ============================================
 display_object(
@@ -302,7 +320,10 @@ display_object(
     image_path="Milestone Sources/2011_Kingkey_100_Completion.jpg",         
     source="source link",
     license_text="license statement",
-    caption="caption"
+    caption="caption",
+        extra_sections=[
+        ("Historical Significance", """historical significance...""")
+    ]
 )
 # ============================================
 display_object(
@@ -312,7 +333,10 @@ display_object(
     image_path="Milestone Sources/2014_Ping_An_Finance_Center_Topping_Out.jpg",         
     source="source link",
     license_text="license statement",
-    caption="caption"
+    caption="caption",
+        extra_sections=[
+        ("Historical Significance", """historical significance...""")
+    ]
 )
 # ============================================
 display_object(
@@ -322,7 +346,10 @@ display_object(
     image_path="Milestone Sources/2016_ShenzhenHongKong_Stock_Connect_Open.png",         
     source="source link",
     license_text="license statement",
-    caption="caption"
+    caption="caption",
+        extra_sections=[
+        ("Historical Significance", """historical significance...""")
+    ]
 )
 # ============================================
 display_object(
@@ -332,7 +359,10 @@ display_object(
     image_path="Milestone Sources/2018_HongKongZhuhaiMacao_Bridge.jpeg",         
     source="source link",
     license_text="license statement",
-    caption="caption"
+    caption="caption",
+        extra_sections=[
+        ("Historical Significance", """historical significance...""")
+    ]
 )
 # ============================================
 display_object(
@@ -342,7 +372,12 @@ display_object(
     image_path="Milestone Sources/2023_Intelligent_Connected_Vehicles_Regulation.png",         
     source="source link",
     license_text="license statement",
-    caption="caption"
+    caption="caption",
+        extra_sections=[
+        ("Translation", """translation"""),
+        
+        ("Historical Significance", """historical significance...""")
+    ]
 )
 # ============================================
 display_object(
@@ -352,7 +387,10 @@ display_object(
     image_path="Milestone Sources/2024_ShenzhenZhongshan_Link_Opening.jpg",         
     source="source link",
     license_text="license statement",
-    caption="caption"
+    caption="caption",
+    extra_sections=[
+        ("Historical Significance", """historical significance...""")
+    ]
 )
 # ============================================
 display_object(
@@ -362,5 +400,8 @@ display_object(
     image_path="Milestone Sources/2025_Qianhai_Huafa_Ice_Snow_World_Opening.jpg",         
     source="source link",
     license_text="license statement",
-    caption="caption"
+    caption="caption",
+    extra_sections=[
+        ("Historical Significance", """historical significance...""")
+    ]
 )
