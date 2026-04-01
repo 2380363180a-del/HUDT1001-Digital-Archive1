@@ -160,7 +160,7 @@ display_object(
 # ============================================
 display_object(
     year="1982",
-    title="Shenchen in 1982",
+    title="Shenzhen in 1982",
     description="A construction site in Shenzhen 1982",
     image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
     source="https://en.wikipedia.org/wiki/File:Shenchen_in_1982.jpg",
