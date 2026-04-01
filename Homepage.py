@@ -129,23 +129,26 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 def display_object(year, title, description, image_path, source, license_text, 
-                   caption="", context=None):
+                   caption="", extra_sections=None):
     st.markdown(f"### {year}")
     st.markdown(f"#### {title}")
     
     st.image(image_path, use_container_width=True, caption=caption)
     
     st.markdown("**Description:**")
-    st.write(description)                   
+    st.write(description)
     
-    if context:                             
-        st.markdown("**Historical Context / Significance:**")
-        st.markdown(context)
+    if extra_sections:
+        for section_title, section_text in extra_sections:
+            st.markdown(f"**{section_title}:**")
+            st.markdown(section_text)
     
+
     st.markdown("---")
     st.markdown(f'<p class="light-text"><strong>Source:</strong> {source}</p>', unsafe_allow_html=True)
     st.markdown(f'<p class="light-text"><strong>License:</strong> {license_text}</p>', unsafe_allow_html=True)
-    st.markdown("---")
+    
+    st.markdown("---")   
     # ============================================
 display_object(
     year="1979",
@@ -155,6 +158,12 @@ display_object(
     source="Wikimedia Commons - State Council Document No. [1979] 63",
     license_text="Public Domain in mainland China according to Article 5 of the Copyright Law of the People's Republic of China. This official government document is not subject to copyright.",
     caption="1979·State Council Document"
+    extra_sections=[
+        ("Translation", "State Council Document. State Council [1979] No. 63. Reply of the State Council on Approving the Establishment of Shenzhen Municipality and Zhuhai Municipality in Guangdong Province
+To the Revolutionary Committee of Guangdong Province: Your report dated January 13, 1979, has been received and is hereby approved as follows:
+1.  Bao’an County shall be converted into Shenzhen Municipality, with the administrative area of Bao’an County serving as the administrative area of Shenzhen Municipality. The Municipal Revolutionary Committee shall be stationed in Shenzhen.
+2.  Zhuhai County shall be converted into Zhuhai Municipality, with the administrative area of Zhuhai County serving as the administrative area of Zhuhai Municipality. The Municipal Revolutionary Committee shall be stationed in Xiangzhou.")
+    ]
 )
 
 # ============================================
@@ -166,9 +175,10 @@ display_object(
     source="https://en.wikipedia.org/wiki/File:Shenchen_in_1982.jpg",
     license_text="CC-BY-SA 3.0",
     caption="1982·Shenzhen",
-    context="""In 1982, the slogan "Time is money, efficiency is life" was proposed in Shenzhen. 
-    It broke the ideological barriers of the planned economy era and became the spiritual symbol 
-    of China’s reform and opening-up, driving the city’s rapid industrialization."""
+    extra_sections=[
+        ("Historical Significance", """In 1982, the slogan "Time is money, efficiency is life" was proposed in Shenzhen, 
+        breaking the ideological barriers and became the spiritual symbol of China’s reform and opening-up era.""")
+    ]
 )
 # ============================================
 display_object(
@@ -179,9 +189,11 @@ display_object(
     source="https://zh.wikipedia.org/wiki/File:SZITB.JPG",
     license_text="CC-BY-SA 2.5",
     caption="2006·Guomao Building",
-    context="""Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985. 
+    extra_sections=[
+        ("Historical Significance", """Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985. 
     Known as "Shenzhen Speed", it became China’s tallest building at the time and a national symbol of the 
-    city’s rapid development in the early reform era."""
+    city’s rapid development in the early reform era.""")
+    ]
 )
 # ============================================
 display_object(
@@ -192,9 +204,11 @@ display_object(
     source="https://zh.wikipedia.org/wiki/File:Shenzhen_walk_02.JPG",
     license_text="license statement",
     caption="2005·Shenzhen Stock Exchange",
-    context="""The Shenzhen Stock Exchange was formally launched in 1990. 
+    extra_sections=[
+        ("Historical Significance", """The Shenzhen Stock Exchange was formally launched in 1990. 
     It established Shenzhen as a national financial center and created China’s second major capital market, 
-    accelerating the city’s shift from manufacturing to modern finance. In the same year, Shenzhen became an important export processing base, and its ports are developing rapidly.
+    accelerating the city’s shift from manufacturing to modern finance. In the same year, Shenzhen became an important export processing base, and its ports are developing rapidly.""")
+    ]
 """
 )
 # ============================================
@@ -205,7 +219,10 @@ display_object(
     image_path="Milestone Sources/Shenzhen Baoan International Airport Opening.JPG",         
     source="source link",
     license_text="license statement",
-    caption="caption"
+    caption="caption"，
+    extra_sections=[
+        ("Historical Significance", """historical significance...""")
+    ]
 )
 # ============================================
 display_object(
