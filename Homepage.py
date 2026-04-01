@@ -172,13 +172,16 @@ display_object(
 )
 # ============================================
 display_object(
-    year="year",
-    title="title",
-    description="description(must match Excel)...",
+    year="1985",
+    title="Guomao Building Completed",
+    description="Shenzhen International Trade Center Tower, a landmark skyscraper in Shenzhen in the 1980s.",
     image_path="Milestone Sources/Guomao Building (International Trade Centre).jpg",         
-    source="source link",
-    license_text="license statement",
-    caption="caption"
+    source="https://en.wikipedia.org/wiki/File:Guomao_Building_in_Shenzhen2021.jpg",
+    license_text="CC-BY-SA 4.0",
+    caption="2021·Guomaos Building",
+    context="""Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985. 
+    Known as "Shenzhen Speed", it became China’s tallest building at the time and a national symbol of the 
+    city’s rapid development in the early reform era."
 )
 # ============================================
 display_object(
