@@ -194,9 +194,7 @@ display_object(
     caption="2005·Shenzhen Stock Exchange",
     context="""The Shenzhen Stock Exchange was formally launched in 1990. 
     It established Shenzhen as a national financial center and created China’s second major capital market, 
-    accelerating the city’s shift from manufacturing to modern finance. 
-    
-    In the same year, Shenzhen became an important export processing base, and its ports are developing rapidly.
+    accelerating the city’s shift from manufacturing to modern finance. In the same year, Shenzhen became an important export processing base, and its ports are developing rapidly.
 """
 )
 # ============================================
