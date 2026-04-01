@@ -200,7 +200,7 @@ display_object(
     year="1990",
     title="Shenzhen Stock Exchange Launch",
     description="The Shenzhen stock market",
-    image_path="Milestone Sources/1990_Shenzhen_Stock_Exchange_launch.png",
+    image_path="Milestone Sources/1990_Shenzhen_Stock_Exchange_2005.png",
     source="https://zh.wikipedia.org/wiki/File:Shenzhen_walk_02.JPG",
     license_text="CC BY-SA 3.0",
     caption="2005·Shenzhen Stock Exchange",
