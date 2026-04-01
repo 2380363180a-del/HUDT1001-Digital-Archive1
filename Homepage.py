@@ -178,7 +178,7 @@ display_object(
     image_path="Milestone Sources/Guomao Building (International Trade Centre).jpg",         
     source="https://en.wikipedia.org/wiki/File:Guomao_Building_in_Shenzhen2021.jpg",
     license_text="CC-BY-SA 4.0",
-    caption="2021·Guomaos Building",
+    caption="2021·Guomao Building",
     context="""Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985. 
     Known as "Shenzhen Speed", it became China’s tallest building at the time and a national symbol of the 
     city’s rapid development in the early reform era."""
