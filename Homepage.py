@@ -128,15 +128,24 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-def display_object(year, title, description, image_path, source, license_text, caption=""):
+def display_object(year, title, description, image_path, source, license_text, 
+                   caption="", context=None):
     st.markdown(f"### {year}")
     st.markdown(f"#### {title}")
+    
     st.image(image_path, use_container_width=True, caption=caption)
-    # Description
-    st.write(description)                 
+    
+    st.markdown("**Description:**")
+    st.write(description)                   
+    
+    if context:                             
+        st.markdown("**Historical Context / Significance:**")
+        st.markdown(context)
+    
+    st.markdown("---")
     st.markdown(f'<p class="light-text"><strong>Source:</strong> {source}</p>', unsafe_allow_html=True)
     st.markdown(f'<p class="light-text"><strong>License:</strong> {license_text}</p>', unsafe_allow_html=True)
-    st.markdown("---")  
+    st.markdown("---")
     # ============================================
 display_object(
     year="1979",
@@ -144,19 +153,22 @@ display_object(
     description="The State Council of the People's Republic of China issued Document No. [1979] 63, officially establishing Shenzhen Municipality as a prefecture-level city.",
     image_path="Milestone Sources/State Council Document No. [1979] 63.png",
     source="Wikimedia Commons - State Council Document No. [1979] 63",
-    license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication",
-    caption="1979 • State Council Document"
+    license_text="Public Domain in mainland China according to Article 5 of the Copyright Law of the People's Republic of China. This official government document is not subject to copyright.",
+    caption="1979·State Council Document"
 )
 
 # ============================================
 display_object(
-    year="year",
-    title="title",
-    description="description(must match Excel)...",
+    year="1982",
+    title="Shenchen in 1982",
+    description="A construction site in Shenzhen 1982",
     image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
-    source="source link",
-    license_text="license statement",
-    caption="caption"
+    source="https://en.wikipedia.org/wiki/File:Shenchen_in_1982.jpg",
+    license_text="CC-BY-SA 3.0",
+    caption="1982·Shenzhen"
+    context="""In 1982, the slogan "Time is money, efficiency is life" was proposed in Shenzhen. 
+    It broke the ideological barriers of the planned economy era and became the spiritual symbol 
+    of China’s reform and opening-up, driving the city’s rapid industrialization."""
 )
 # ============================================
 display_object(
