@@ -165,7 +165,7 @@ display_object(
     image_path="Milestone Sources/Time is Money; Efficiency is Life Slogan.jpg",         
     source="https://en.wikipedia.org/wiki/File:Shenchen_in_1982.jpg",
     license_text="CC-BY-SA 3.0",
-    caption="1982·Shenzhen"
+    caption="1982·Shenzhen",
     context="""In 1982, the slogan "Time is money, efficiency is life" was proposed in Shenzhen. 
     It broke the ideological barriers of the planned economy era and became the spiritual symbol 
     of China’s reform and opening-up, driving the city’s rapid industrialization."""
