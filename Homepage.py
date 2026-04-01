@@ -202,7 +202,7 @@ display_object(
     description="The Shenzhen stock market",
     image_path="Milestone Sources/Shenzhen Stock Exchange Launch 2005.png",
     source="https://zh.wikipedia.org/wiki/File:Shenzhen_walk_02.JPG",
-    license_text="license statement",
+    license_text="CC-BY-SA 3.0",
     caption="2005·Shenzhen Stock Exchange",
     extra_sections=[
         ("Historical Significance", """The Shenzhen Stock Exchange was formally launched in 1990. 
