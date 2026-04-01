@@ -181,7 +181,7 @@ display_object(
     caption="2021·Guomaos Building",
     context="""Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985. 
     Known as "Shenzhen Speed", it became China’s tallest building at the time and a national symbol of the 
-    city’s rapid development in the early reform era."
+    city’s rapid development in the early reform era."""
 )
 # ============================================
 display_object(
