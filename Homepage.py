@@ -309,7 +309,7 @@ display_object(
     license_text="license statement",
     caption="caption",
         extra_sections=[
-        ("Translation", """translation"""),
+        ("Interpretation", """Interpretation"""),
         
         ("Historical Significance", """historical significance...""")
     ]
