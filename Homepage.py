@@ -157,7 +157,7 @@ display_object(
     image_path="Milestone Sources/State Council Document No. [1979] 63.png",
     source="Wikimedia Commons - State Council Document No. [1979] 63",
     license_text="Public Domain in mainland China according to Article 5 of the Copyright Law of the People's Republic of China. This official government document is not subject to copyright.",
-    caption="1979·State Council Document"
+    caption="1979·State Council Document",
     extra_sections=[
     ("Translation", """State Council Document. State Council [1979] No. 63. Reply of the State Council on Approving the Establishment of Shenzhen Municipality and Zhuhai Municipality in Guangdong Province
 To the Revolutionary Committee of Guangdong Province: Your report dated January 13, 1979, has been received and is hereby approved as follows:
