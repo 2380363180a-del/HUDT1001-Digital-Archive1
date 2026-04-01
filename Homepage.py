@@ -200,16 +200,16 @@ display_object(
     year="1990",
     title="Shenzhen Stock Exchange Launch",
     description="The Shenzhen stock market",
-    image_path="Milestone Sources/Shenzhen Stock Exchange Launch 2005.png",         
+    image_path="Milestone Sources/Shenzhen Stock Exchange Launch 2005.png",
     source="https://zh.wikipedia.org/wiki/File:Shenzhen_walk_02.JPG",
     license_text="license statement",
     caption="2005·Shenzhen Stock Exchange",
     extra_sections=[
         ("Historical Significance", """The Shenzhen Stock Exchange was formally launched in 1990. 
-    It established Shenzhen as a national financial center and created China’s second major capital market, 
-    accelerating the city’s shift from manufacturing to modern finance. In the same year, Shenzhen became an important export processing base, and its ports are developing rapidly.""")
+        It established Shenzhen as a national financial center and created China’s second major capital market, 
+        accelerating the city’s shift from manufacturing to modern finance. In the same year, Shenzhen became 
+        an important export processing base, and its ports are developing rapidly.""")
     ]
-"""
 )
 # ============================================
 display_object(
