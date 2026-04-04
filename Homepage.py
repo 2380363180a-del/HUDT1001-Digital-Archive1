@@ -173,7 +173,7 @@ display_object(
     description="A construction site in Shenzhen 1982",
     image_path="Milestone Sources/1982_Shenzhen_in_1982.jpg",         
     source="https://en.wikipedia.org/wiki/File:Shenchen_in_1982.jpg",
-    license_text="CC BY-SA 3.0",
+    license_text="Creative Commons Attribution-Share Alike 3.0 Unported",
     caption="1982·Shenzhen",
     extra_sections=[
         ("Historical Significance", """In 1982, the slogan "Time is money, efficiency is life" was proposed in Shenzhen, 
@@ -187,7 +187,7 @@ display_object(
     description="The International Trade Building in Shenzhen, China",
     image_path="Milestone Sources/1985_Guomao_Building_2006.jpeg",         
     source="https://zh.wikipedia.org/wiki/File:SZITB.JPG",
-    license_text="CC BY-SA 2.5",
+    license_text="Creative Commons Attribution-Share Alike 2.5 Generic",
     caption="2006·Guomao Building",
     extra_sections=[
         ("Historical Significance", """Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985. 
@@ -202,7 +202,7 @@ display_object(
     description="The Shenzhen stock market",
     image_path="Milestone Sources/1990_Shenzhen_Stock_Exchange_2005.png",
     source="https://zh.wikipedia.org/wiki/File:Shenzhen_walk_02.JPG",
-    license_text="CC BY-SA 3.0",
+    license_text="Creative Commons Attribution-Share Alike 3.0 Unported",
     caption="2005·Shenzhen Stock Exchange",
     extra_sections=[
         ("Historical Significance", """The Shenzhen Stock Exchange was formally launched in 1990. 
