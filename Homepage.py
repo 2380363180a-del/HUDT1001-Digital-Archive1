@@ -313,6 +313,7 @@ display_object(
 # ============================================
 display_object(
     year="2010",
+<<<<<<< HEAD
     title="SEZ Expansion to Entire City",
     description="Subdivision of Shenzhen (French version). A map showing the administrative districts of Shenzhen as of the end of 2009, with labels in French.",
     image_path="Milestone Sources/2010_SEZ_Expansion_to_Entire_City.png",            source="https://commons.wikimedia.org/wiki/File:Shenzhen_administrative_divisions_(end_2009,_fr).svg",
@@ -321,6 +322,18 @@ display_object(
     extra_sections=[
         ("Historical Significance", """In 2010, the Special Economic Zone was expanded to cover the entire city (from 395 km² to 1,953 km²). 
          This major policy change enabled unified urban planning and city-wide integrated development.""")
+=======
+    title="title",
+    description="description(must match Excel)...",
+    image_path="Milestone Sources/2010_SEZ_Expansion_to_Entire_City.png",         
+    source="source link",
+    license_text="license statement",
+    caption="caption",
+        extra_sections=[
+        ("Interpretation", """Interpretation (translate and briefly explain the meaning"""),
+        
+        ("Historical Significance", """historical significance...""")
+>>>>>>> 6305649ea4bb61d6fbe9fdaa1b4fc37d45b8aedf
     ]
 )
 # ============================================
@@ -385,12 +398,20 @@ display_object(
     title="Intelligent Connected Vehicles Regulation",
     description="Regulations of Shenzhen Special Economic Zone on the Administration of Intelligent Connected Vehicles",
     image_path="Milestone Sources/2023_Intelligent_Connected_Vehicles_Regulation.png",         
+<<<<<<< HEAD
     source="https://sf.sz.gov.cn/fggzywyb/content/mpost_11216374.html",
     license_text="Public information provided by the Shenzhen Municipal Government; Subject to Chinese government information disclosure and copyright laws",
     caption="2023·Intelligent Connected Vehicles Regulation",
     extra_sections=[
         ("Historical Significance", """Shenzhen issued China’s first local regulation on Intelligent Connected Vehicles in 2023.
          It pioneered autonomous driving legislation and positioned the city as a global leader in future mobility industries.""")
+=======
+    source="source link",
+    license_text="license statement",
+    caption="caption",
+        extra_sections=[
+        ("Historical Significance", """historical significance...""")
+>>>>>>> 6305649ea4bb61d6fbe9fdaa1b4fc37d45b8aedf
     ]
 )
 # ============================================
