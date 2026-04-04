@@ -414,7 +414,7 @@ display_object(
     description="The design of Shenzhen Qianhai Huafa Snow World by 10 Design",
     image_path="Milestone Sources/2025_Qianhai_Huafa_Ice_Snow_World_Opening.jpg",         
     source="https://commons.wikimedia.org/wiki/File:GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E8%B7%A8%E5%B8%82%E5%A4%A7%E5%B7%B4_intercity_bus_tour_view_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%AF%B6%E5%AE%89%E5%8D%80_BaoAn_District_buildings_1123am_October_2024_R12S_436.jpg",
-    license_text="Copyright © 10 Design. All rights reserved.",
+    license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication.",
     caption="2025·Qianhai Huafa Ice & Snow World Opening",
     extra_sections=[
         ("Historical Significance", """Qianhai Ice & Snow World (430,000 m²) opened in 2025. 
