@@ -137,20 +137,15 @@ def display_object(year, title, description, image_path, source, license_text,
     st.markdown("**Description:**")
     st.write(description)
     
-    # 额外部分（Translation、Historical Significance 等）
     if extra_sections:
         for section_title, section_text in extra_sections:
             st.markdown(f"**{section_title}:**")
             st.markdown(section_text)
     
-    st.markdown("---")
-    
-    # ==================== 新增：折叠的 Source & License ====================
-    with st.expander("📋 More Information (Source & License)", expanded=False):
+    with st.expander("About", expanded=False):
         st.markdown(f"**Source:** {source}")
         st.markdown(f"**License:** {license_text}")
     
-    st.markdown("---")
     # ============================================
 display_object(
     year="1979",
