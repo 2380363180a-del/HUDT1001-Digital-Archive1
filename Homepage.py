@@ -320,11 +320,8 @@ display_object(
     caption="2010·SEZ Expansion to Entire City",
     extra_sections=[
         ("Translation", """**Sub-provincial city of Shenzhen (Guangdong Province)**
-         **Legend:**
-         
          - Light pink: urban district outside the SEZ 
          - Dark pink: urban district of the SEZ
-
          **Note:** The districts of Guangming and Pingshan were established by local authorities and do not have official existence at the national level."""),
 
         ("Historical Significance", """In 2010, the Special Economic Zone was expanded to cover the entire city (from 395 km² to 1,953 km²). 
