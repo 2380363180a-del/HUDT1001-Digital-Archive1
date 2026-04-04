@@ -426,5 +426,5 @@ display_object(
     ]
 )
 
-st.markdown("### Thank you for exploring Shenzhen's 45-year transformation.")
+st.markdown("### Thank you for exploring.")
 
