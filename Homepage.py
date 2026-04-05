@@ -188,11 +188,16 @@ display_object(
 display_object(
     year="1985",
     title="Guomao Building Completed",
-    description="Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985, known as ' "Shenzhen Speed', becoming a national symbol of the city's extraordinary construction capability and economic ambition.",
-    image_path="Milestone Sources/1985_Guomao_Building_2006.jpeg",         
-    Source="Wikimedia Commons - Guomao Building (International Trade Centre) (https://zh.wikipedia.org/wiki/File:SZITB.JPG)",
-    license_text="Creative Commons Attribution-Share Alike 2.5 Generic",
+    description="""Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985. 
+    Known as "Shenzhen Speed", it became China's tallest building at the time and a national symbol of the city's rapid development and economic ambition.""",
+    image_path="Milestone Sources/1985_Guomao_Building_2006.jpeg",
+    source="Wikimedia Commons - Guomao Building (International Trade Centre)",
+    license_text="Creative Commons Attribution-ShareAlike 2.5 Generic (CC BY-SA 2.5)",
     caption="2006·Guomao Building",
+    extra_sections=[
+        ("Historical Significance", """Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985. 
+        Known as "Shenzhen Speed", it became China's tallest building at the time and a national symbol of the city's rapid development and economic ambition.""")
+    ]
 )
 # ============================================
 display_object(
