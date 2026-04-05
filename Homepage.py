@@ -142,7 +142,7 @@ def display_object(year, title, description, image_path, Source, license_text,
             st.markdown(f"**{section_title}:**")
             st.markdown(section_text)
     
-    with st.expander("About", expanded=False):
+    with st.expander("More Information", expanded=False):
         st.markdown(f"**Source:** {Source}")
         st.markdown(f"**License:** {license_text}")
     
