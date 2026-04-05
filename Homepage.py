@@ -158,7 +158,7 @@ display_object(
     image_path="Milestone Sources/1979_State_Council_Document.png",
     source="Wikimedia Commons - State Council Document No. [1979] 63",
     license_text="Public Domain in mainland China according to Article 5 of the Copyright Law of the People's Republic of China. This official government document is not subject to copyright.",
-    caption="1979·State Council Document"
+    caption="1979·State Council Document",
 )
 
 # ============================================
