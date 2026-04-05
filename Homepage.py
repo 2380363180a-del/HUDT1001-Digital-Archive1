@@ -171,7 +171,8 @@ To the Revolutionary Committee of Guangdong Province: Your report dated January 
 display_object(
     year="1982",
     title="Shenzhen in 1982",
-    description="Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985, knowingly "Shenzhen Speed", becoming a national symbol of the city's extraordinary construction capability and economic ambition.",
+    description="The slogan “Time is money, efficiency is life” was proposed in Shenzhen, breaking the ideological barriers, becoming the spiritual symbol of China’s reform and opening-up era, and driving the city’s rapid industrialization.
+",
     image_path="Milestone Sources/1982_Shenzhen_in_1982.jpg",         
     Source="Wikimedia Commons - Shenzhen in 1982 (https://en.wikipedia.org/wiki/File:Shenchen_in_1982.jpg)",
     license_text="Creative Commons Attribution-Share Alike 3.0 Unported",
