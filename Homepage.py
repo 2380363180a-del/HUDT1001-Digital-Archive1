@@ -387,6 +387,19 @@ display_object(
 )
 # ============================================
 display_object(
+    year="2020",
+    title="Shenzhen Achieved Nationwide Full 5G Standalone Coverage First",
+    description="Shenzhen achieved nationwide full 5G standalone coverage first in 2020",
+    image_path="Milestone Sources/2020_Full_5G_Standalone_Coverage.jpg",         
+    Source="Wikimedia Commons - 5G base stations of China Mobile and China Unicom (https://commons.wikimedia.org/wiki/File:5G_Base_Stations_of_China_Mobile_and_China_Unicom_in_Expo_2019_(20191005182324).jpg)",
+    license_text="Creative Commons Attribution-Share Alike 4.0 International",
+    caption="2020·Full 5G Standalone Coverage",
+    extra_sections=[
+        ("Historical Significance", """Shenzhen achieved nationwide full 5G standalone coverage first in 2020. This milestone established the city as a leader in digital infrastructure and laid the foundation for its smart-city development.""")
+    ]
+)
+# ============================================
+display_object(
     year="2023",
     title="Intelligent Connected Vehicles Regulation",
     description="Regulations of Shenzhen Special Economic Zone on the Administration of Intelligent Connected Vehicles",
