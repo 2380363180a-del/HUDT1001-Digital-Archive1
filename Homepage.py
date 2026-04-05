@@ -131,7 +131,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-def display_object(year, title, description, image_path, Source, license_text, 
+def display_object(year, title, description, image_path, source, license_text, 
                    caption="", extra_sections=None):
     st.markdown(f"### {year}")
     st.markdown(f"#### {title}")
