@@ -180,26 +180,16 @@ display_object(
     source="Wikimedia Commons - Shenzhen in 1982",
     license_text="Creative Commons Attribution-ShareAlike 3.0 Unported",
     caption="1982·Shenzhen",
-    extra_sections=[
-        ("Historical Significance", """The slogan "Time is money, efficiency is life" was proposed in Shenzhen in 1982, 
-        breaking the ideological barriers and becoming the spiritual symbol of China’s reform and opening-up era, 
-        driving the city’s rapid industrialization.""")
-    ]
 )
 # ============================================
 display_object(
     year="1985",
     title="Guomao Building Completed",
-    description="""Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985. 
-    Known as "Shenzhen Speed", it became China's tallest building at the time and a national symbol of the city's rapid development and economic ambition.""",
+    description="""Construction of the Guomao Building began in just 37 months by 1985, is known as "Shenzhen Speed", becoming a national symbol of the city's rapid development and economic ambition.""",
     image_path="Milestone Sources/1985_Guomao_Building_2006.jpeg",
     source="Wikimedia Commons - Guomao Building (International Trade Centre)",
     license_text="Creative Commons Attribution-ShareAlike 2.5 Generic (CC BY-SA 2.5)",
     caption="2006·Guomao Building",
-    extra_sections=[
-        ("Historical Significance", """Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985. 
-        Known as "Shenzhen Speed", it became China's tallest building at the time and a national symbol of the city's rapid development and economic ambition.""")
-    ]
 )
 # ============================================
 display_object(
