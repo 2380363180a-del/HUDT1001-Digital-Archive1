@@ -110,13 +110,10 @@ html_code = f"""
 components.html(html_code, height=750)
 
 st.markdown("---")
-st.subheader("About the Timeline")
 st.write("This interactive timeline shows the historical satellite imagery of Shenzhen from 1979 to 2020 captured from Google Earth.")
-
 with st.expander("More Information", expanded=False):
     st.markdown("**Source:** Google Earth Historical Imagery")
     st.markdown("**License:** Screenshot from Google Earth © Google. Used for non-commercial educational purposes only.")
-
 st.markdown("---")
 st.title("Shenzhen 1980-2025 Development Milestones")
 
