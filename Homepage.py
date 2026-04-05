@@ -220,7 +220,7 @@ display_object(
     image_path="Milestone Sources/1991_Shenzhen_Baoan_International_Airport_Opening.JPG",         
     Source="Wikimedia Commons - Shenzhen Bao'an International Airport Terminal A (https://zh.wikipedia.org/wiki/File:Shenzhen_Airport_Terminal_A.JPG)",
     license_text="Creative Commons Attribution-Share Alike 4.0 International",
-    caption="1991·Shenzhen Bao’an International Airport Opening",
+    caption="2009·Shenzhen Bao’an International Airport",
     extra_sections=[
         ("Historical Significance", """Shenzhen Bao’an International Airport opened in 1991. 
          This new aviation hub greatly improved the city’s global connectivity and supported its 
@@ -235,7 +235,7 @@ display_object(
     image_path="Milestone Sources/1996_Shun_Hing_Square_Complete.jpg",         
     Source="Wikimedia Commons - Shun Hing Square (https://commons.wikimedia.org/wiki/File:Shun_Hing_Square.jpg)",
     license_text="Creative Commons Attribution-ShareAlike 3.0 Unported and GNU Free Documentation License",
-    caption="1996·Shun Hing Square Complete",
+    caption="2001·Shun Hing Square",
     extra_sections=[
         ("Historical Significance", """Shun Hing Square (Di Wang Tower) was completed in 1996 at 384 meters. 
          It became China’s tallest building at the time and symbolized Shenzhen’s economic rise while defining the Luohu Central Business District.""")
@@ -249,7 +249,7 @@ display_object(
     image_path="Milestone Sources/1997_ ChinaSARHongKong_border.png",          
     Source="Wikimedia Commons - Shenzhen-Hong Kong border view from Luohu (https://zh.wikipedia.org/wiki/File:China-SAR-HongKong_border_view-from-Shenzhen1.jpg)",
     license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication",
-    caption="1997·China-SAR-HongKong border",
+    caption="2006·China-SAR-HongKong border",
     extra_sections=[
         ("Historical Significance", """On 1 July 1997, Hong Kong was handed over to China under “One Country, Two Systems.” 
          The smooth transition greatly boosted international confidence in Shenzhen, strengthening its role as the
@@ -264,7 +264,7 @@ display_object(
     image_path="Milestone Sources/1999_First_China_HiTech_Fair.jpg",             
     Source="Wikimedia Commons - Cloud View Light Layer 2019 (https://en.wikipedia.org/wiki/File:%E4%BA%91%E9%99%85%E8%A7%82%E5%85%89%E5%B1%82_2019_-_07.jpg)",
     license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication.",
-    caption="1999·First China Hi-Tech Fair (CHTF)",
+    caption="2019·Hi-Tech Fair",
     extra_sections=[
         ("Historical Significance", """The first China Hi-Tech Fair was held in Shenzhen in 1999. 
          It established the city as a national platform for technology exchange and innovation, 
@@ -279,7 +279,7 @@ display_object(
     image_path="Milestone Sources/2000_Shenzhen_University_Town_Founding.jpg",         
     Source="Wikimedia Commons - Shenzhen University Town main entrance (https://en.wikipedia.org/wiki/File:Umversitytownszmainentrance.jpg)",
     license_text="Creative Commons Attribution-Share Alike 3.0 Unported",
-    caption="2000·Shenzhen University Town Founding",
+    caption="2017·Shenzhen University Town",
     extra_sections=[
         ("Historical Significance", """Shenzhen University Town was founded in 2000. 
          It attracted top universities and research institutes, creating a strong local higher-education and R&D base 
@@ -294,7 +294,7 @@ display_object(
     image_path="Milestone Sources/2004_Shenzhen_Metro_Line_1_Opening.jpeg",         
     Source="Wikimedia Commons - Shenzhen Metro Line 1 (https://commons.wikimedia.org/wiki/File:ShenzhenMetro-L1-126.jpeg)",
     license_text="Creative Commons Attribution-Share Alike 4.0 International (CC BY-SA 4.0) / GNU Free Documentation License, version 1.2 or later.",
-    caption="2004·Shenzhen Metro Line 1 Opening",
+    caption="2021·Shenzhen Metro Line 1",
     extra_sections=[
         ("Historical Significance", """Shenzhen Metro Line 1 opened in 2004. This marked the beginning of the city’s modern rail 
          transit era and formed the backbone of its urban transportation network.""")
@@ -308,7 +308,7 @@ display_object(
     image_path="Milestone Sources/2006_DJI.png",         
     Source="Wikimedia Commons - DJI Innovations logo (https://en.wikipedia.org/wiki/File:DJI_Innovations_logo.svg)",
     license_text="Public Domain",
-    caption="2006·DJI Innovations logo",
+    caption="DJI Innovations logo",
     extra_sections=[
         ("Historical Significance", """DJI (Da-Jiang Innovations) was founded in a small apartment in Shenzhen in 2006. 
          The company grew into the global leader in drones, establishing Shenzhen’s worldwide reputation for hardware innovation and entrepreneurship.""")
@@ -322,7 +322,7 @@ display_object(
     image_path="Milestone Sources/2010_SEZ_Expansion_to_Entire_City.png",            
     Source="Wikimedia Commons - Shenzhen administrative divisions (2009) (https://commons.wikimedia.org/wiki/File:Shenzhen_administrative_divisions_(end_2009,_fr).svg)",
     license_text="Creative Commons Attribution-Share Alike 2.5 Generic (CC BY-SA 2.5).",
-    caption="2010·SEZ Expansion to Entire City",
+    caption="2009·Shenzhen administrative divisions",
     extra_sections=[
         ("Translation", """**Sub-provincial city of Shenzhen (Guangdong Province)**
          - Light pink: urban district outside the SEZ 
@@ -341,7 +341,7 @@ display_object(
     image_path="Milestone Sources/2011_Kingkey_100_Completion.jpg",         
     Source="Wikimedia Commons - Kingkey 100 (https://en.wikipedia.org/wiki/File:Kingkey-100-5.jpg)",
     license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication.",
-    caption="2011·Kingkey 100 Completion",
+    caption="2011·Kingkey 100",
     extra_sections=[
         ("Historical Significance", """Kingkey 100 (441.8 m) was completed in 2011. 
          It became a landmark of Futian CBD and demonstrated Shenzhen's growing financial and economic strength.""")
@@ -355,7 +355,7 @@ display_object(
     image_path="Milestone Sources/2014_Ping_An_Finance_Center_Topping_Out.jpg",         
     Source="Wikimedia Commons - Futian commercial area 2020 (https://commons.wikimedia.org/wiki/File:Commercial_area_of_futian_to_east2020_(4to3).jpg)",
     license_text="Creative Commons Attribution-Share Alike 4.0 International (CC BY-SA 4.0).",
-    caption="2014·Ping An Finance Center Topping Out",
+    caption="2021·Futian",
     extra_sections=[
         ("Historical Significance", """Ping An Finance Center (599.1 m) was topped out in 2014. 
          It became Shenzhen's new skyline icon and significantly enhanced the city's global image as a modern metropolis.""")
@@ -369,7 +369,7 @@ display_object(
     image_path="Milestone Sources/2016_ShenzhenHongKong_Stock_Connect_Open.png",         
     Source="Wikimedia Commons - Shenzhen Stock Exchange (https://commons.wikimedia.org/wiki/File:Shenzhen_Stock_Exchange.jpg)",
     license_text="Creative Commons Attribution-Share Alike 3.0 Unported",
-    caption="2016·Shenzhen-Hong Kong Stock Connect Open",
+    caption="2010·Shenzhen Stock Exchange",
     extra_sections=[
         ("Historical Significance", """Shenzhen-Hong Kong Stock Connect was launched in 2016. 
          It deepened financial integration between Shenzhen and Hong Kong, further strengthening the city’s position as a regional financial hub.""")
@@ -397,7 +397,7 @@ display_object(
     image_path="Milestone Sources/2020_Full_5G_Standalone_Coverage.jpg",         
     Source="Wikimedia Commons - 5G base stations of China Mobile and China Unicom (https://commons.wikimedia.org/wiki/File:5G_Base_Stations_of_China_Mobile_and_China_Unicom_in_Expo_2019_(20191005182324).jpg)",
     license_text="Creative Commons Attribution-Share Alike 4.0 International",
-    caption="2020·Full 5G Standalone Coverage",
+    caption="2019·5G Base Station",
     extra_sections=[
         ("Historical Significance", """Shenzhen achieved nationwide full 5G standalone coverage first in 2020. This milestone established the city as a leader in digital infrastructure and laid the foundation for its smart-city development.""")
     ]
@@ -410,7 +410,7 @@ display_object(
     image_path="Milestone Sources/2023_Intelligent_Connected_Vehicles_Regulation.png",         
     Source="Official Website of Shenzhen Municipal Government (https://sf.sz.gov.cn/fggzywyb/content/mpost_11216374.html)",
     license_text="Public information provided by the Shenzhen Municipal Government; Subject to Chinese government information disclosure and copyright laws",
-    caption="2023·Intelligent Connected Vehicles Regulation",
+    caption="2024·Intelligent Connected Vehicles Regulation Document",
     extra_sections=[
         ("Historical Significance", """Shenzhen issued China’s first local regulation on Intelligent Connected Vehicles in 2023.
          It pioneered autonomous driving legislation and positioned the city as a global leader in future mobility industries.""")
@@ -424,7 +424,7 @@ display_object(
     image_path="Milestone Sources/2024_ShenzhenZhongshan_Link_Opening.jpg",         
     Source="Wikimedia Commons - Shenzhen-Zhongshan Link (https://en.wikipedia.org/wiki/File:Shenzhen-Zhongshan_Link_2025.06.jpg)",
     license_text="Creative Commons Attribution-Share Alike 4.0 International",
-    caption="2024·Shenzhen-Zhongshan Link Opening",
+    caption="2025·Shenzhen-Zhongshan Link",
     extra_sections=[
         ("Historical Significance", """The Shenzhen-Zhongshan Link opened in June 2024. 
          This 24 km mega-bridge strengthened connectivity with western Guangdong and accelerated integration within the Greater Bay Area.""")
@@ -438,7 +438,7 @@ display_object(
     image_path="Milestone Sources/2025_Qianhai_Huafa_Ice_Snow_World_Opening.jpg",         
     Source="Wikimedia Commons - Shenzhen Bao'an District buildings 2024 (https://commons.wikimedia.org/wiki/File:GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E8%B7%A8%E5%B8%82%E5%A4%A7%E5%B7%B4_intercity_bus_tour_view_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%AF%B6%E5%AE%89%E5%8D%80_BaoAn_District_buildings_1123am_October_2024_R12S_436.jpg",
     license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication)",
-    caption="2025·Qianhai Huafa Ice & Snow World Opening",
+    caption="2024·Qianhai Huafa Ice & Snow World Construction",
     extra_sections=[
         ("Historical Significance", """Qianhai Ice & Snow World (430,000 m²) opened in 2025. 
          It boosted cultural and tourism development while upgrading Shenzhen’s urban service functions and quality of life.""")
