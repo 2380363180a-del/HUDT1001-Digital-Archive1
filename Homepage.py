@@ -195,7 +195,7 @@ display_object(
 display_object(
     year="1990",
     title="Shenzhen Stock Exchange Launch",
-    description="""The Shenzhen Stock Exchange was formally launched in 1990, establishing Shenzhen as a national financial center and creating China's second major capital market, accelerating the city's shift from manufacturing to modern finance.""",
+    description="""The launch of Shenzhen Stock Exchange established Shenzhen as a national financial center, creating China's second major capital market and accelerating the city's shift from manufacturing to modern finance.""",
     image_path="Milestone Sources/1990_Shenzhen_Stock_Exchange_2005.png",
     source="Wikimedia Commons - Shenzhen Stock Exchange",
     license_text="Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
@@ -206,7 +206,7 @@ display_object(
 display_object(
     year="1991",
     title="Shenzhen Bao'an International Airport Opening",
-    description="""Shenzhen Bao'an International Airport opened in 1991, greatly improving the city's global connectivity and supporting its rapid economic integration with Hong Kong and the international market.""",
+    description="""Shenzhen Bao'an International Airport greatly improved the city's global connectivity and supports its rapid economic integration with Hong Kong and the international market.""",
     image_path="Milestone Sources/1991_Shenzhen_Baoan_International_Airport_Opening.JPG",
     source="Wikimedia Commons - Shenzhen Bao'an International Airport Terminal A",
     license_text="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
@@ -217,7 +217,7 @@ display_object(
 display_object(
     year="1996",
     title="Shun Hing Square Complete",
-    description="""Shun Hing Square (Di Wang Tower) was completed in 1996 at 384 meters, becoming China's tallest building at the time and symbolizing Shenzhen's economic rise while defining the Luohu Central Business District.""",
+    description="""Shun Hing Square (Di Wang Tower) was completed and became China's tallest building at the time, symbolizing Shenzhen's economic rise while defining the Luohu Central Business District.""",
     image_path="Milestone Sources/1996_Shun_Hing_Square_Complete.jpg",
     source="Wikimedia Commons - Shun Hing Square",
     license_text="Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) and GNU Free Documentation License",
@@ -250,7 +250,7 @@ display_object(
 display_object(
     year="2000",
     title="Shenzhen University Town Founding",
-    description="""Shenzhen University Town was founded in 2000, attracting top universities and research institutes and creating a strong local higher-education and R&D base that supported the city's transition into a knowledge economy.""",
+    description="""Shenzhen University Town was founded and attracted top universities and research institutes and creating a strong local higher-education and R&D base that supported the city's transition into a knowledge economy.""",
     image_path="Milestone Sources/2000_Shenzhen_University_Town_Founding.jpg",
     source="Wikimedia Commons - Shenzhen University Town main entrance",
     license_text="Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
@@ -261,7 +261,7 @@ display_object(
 display_object(
     year="2004",
     title="Shenzhen Metro Line 1 Opening",
-    description="""Shenzhen Metro Line 1 opened in 2004, marking the beginning of the city's modern rail transit era and forming the backbone of its urban transportation network.""",
+    description="""Shenzhen Metro Line 1 opened, marking the beginning of the city's modern rail transit era and forming the backbone of its urban transportation network.""",
     image_path="Milestone Sources/2004_Shenzhen_Metro_Line_1_Opening.jpeg",
     source="Wikimedia Commons - Shenzhen Metro Line 1",
     license_text="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) and GNU Free Documentation License",
@@ -303,7 +303,7 @@ display_object(
 display_object(
     year="2011",
     title="Kingkey 100 Completion",
-    description="""Kingkey 100 (441.8 m) was completed in 2011, becoming a landmark of Futian CBD and demonstrating Shenzhen's growing financial and economic strength.""",
+    description="""Kingkey 100 (441.8 m) was completed and became a landmark of Futian CBD and demonstrating Shenzhen's growing financial and economic strength.""",
     image_path="Milestone Sources/2011_Kingkey_100_Completion.jpg",
     source="Wikimedia Commons - Kingkey 100",
     license_text="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
@@ -336,7 +336,7 @@ display_object(
 display_object(
     year="2018",
     title="Hong Kong-Zhuhai-Macao Bridge",
-    description="""The Hong Kong-Zhuhai-Macao Bridge was opened in 2018, accelerating the broader economic integration of the Greater Bay Area and driving Shenzhen to expedite the Shenzhen-Zhongshan Link.""",
+    description="""The Hong Kong-Zhuhai-Macao Bridge was opened, accelerating the broader economic integration of the Greater Bay Area and driving Shenzhen to expedite the Shenzhen-Zhongshan Link.""",
     image_path="Milestone Sources/2018_HongKongZhuhaiMacao_Bridge.jpeg",
     source="Wikimedia Commons - Hong Kong-Zhuhai-Macao Bridge (west section)",
     license_text="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
@@ -369,7 +369,7 @@ display_object(
 display_object(
     year="2024",
     title="Shenzhen-Zhongshan Link Opening",
-    description="""The Shenzhen-Zhongshan Link opened in June 2024, strengthening connectivity with western Guangdong and accelerating integration within the Greater Bay Area.""",
+    description="""The Shenzhen-Zhongshan Link opened, strengthening connectivity with western Guangdong and accelerating integration within the Greater Bay Area.""",
     image_path="Milestone Sources/2024_ShenzhenZhongshan_Link_Opening.jpg",
     source="Wikimedia Commons - Shenzhen-Zhongshan Link",
     license_text="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
@@ -380,7 +380,7 @@ display_object(
 display_object(
     year="2025",
     title="Qianhai Huafa Ice & Snow World Opening",
-    description="""Qianhai Huafa Ice & Snow World (430,000 m²) opened in 2025, boosting cultural and tourism development while upgrading Shenzhen's urban service functions and quality of life.""",
+    description="""Qianhai Huafa Ice & Snow World (430,000 m²) opened, boosting cultural and tourism development while upgrading Shenzhen's urban service functions and quality of life.""",
     image_path="Milestone Sources/2025_Qianhai_Huafa_Ice_Snow_World_Opening.jpg",
     source="Wikimedia Commons - Qianhai Huafa Ice & Snow World",
     license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication",
