@@ -171,12 +171,18 @@ To the Revolutionary Committee of Guangdong Province: Your report dated January 
 display_object(
     year="1982",
     title="Shenzhen in 1982",
-    description="The slogan “Time is money, efficiency is life” was proposed in Shenzhen, breaking the ideological barriers, becoming the spiritual symbol of China’s reform and opening-up era, and driving the city’s rapid industrialization.
-",
-    image_path="Milestone Sources/1982_Shenzhen_in_1982.jpg",         
-    Source="Wikimedia Commons - Shenzhen in 1982 (https://en.wikipedia.org/wiki/File:Shenchen_in_1982.jpg)",
-    license_text="Creative Commons Attribution-Share Alike 3.0 Unported",
+    description="""The slogan "Time is money, efficiency is life" was proposed in Shenzhen in 1982, 
+    breaking the ideological barriers and becoming the spiritual symbol of China’s reform and opening-up era, 
+    driving the city’s rapid industrialization.""",
+    image_path="Milestone Sources/1982_Shenzhen_in_1982.jpg",
+    source="Wikimedia Commons - Shenzhen in 1982",
+    license_text="Creative Commons Attribution-ShareAlike 3.0 Unported",
     caption="1982·Shenzhen",
+    extra_sections=[
+        ("Historical Significance", """The slogan "Time is money, efficiency is life" was proposed in Shenzhen in 1982, 
+        breaking the ideological barriers and becoming the spiritual symbol of China’s reform and opening-up era, 
+        driving the city’s rapid industrialization.""")
+    ]
 )
 # ============================================
 display_object(
