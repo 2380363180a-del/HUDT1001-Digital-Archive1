@@ -154,7 +154,7 @@ def display_object(year, title, description, image_path, Source, license_text,
 display_object(
     year="1979",
     title="Shenzhen Municipality was Officially Established",
-    description="The State Council of the People's Republic of China issued Document No. [1979] 63, officially establishing Shenzhen Municipality as a prefecture-level city.",
+    description="""The State Council of the People's Republic of China issued Document No. [1979] 63, officially establishing Shenzhen Municipality as a prefecture-level city.""",
     image_path="Milestone Sources/1979_State_Council_Document.png",
     source="Wikimedia Commons - State Council Document No. [1979] 63",
     license_text="Public Domain in mainland China according to Article 5 of the Copyright Law of the People's Republic of China. This official government document is not subject to copyright.",
