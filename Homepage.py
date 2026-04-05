@@ -152,7 +152,7 @@ display_object(
     title="Shenzhen Municipality was Officially Established",
     description="The State Council of the People's Republic of China issued Document No. [1979] 63, officially establishing Shenzhen Municipality as a prefecture-level city.",
     image_path="Milestone Sources/1979_State_Council_Document.png",
-    Source="Wikimedia Commons - State Council Document No. [1979] 63",
+    Source="Wikimedia Commons - State Council Document No. [1979] 63 (https://upload.wikimedia.org/wikipedia/commons/6/6f/%E5%9B%BD%E5%8F%91%E3%80%941979%E3%80%9563%E5%8F%B7.webp)",
     license_text="Public Domain in mainland China according to Article 5 of the Copyright Law of the People's Republic of China. This official government document is not subject to copyright.",
     caption="1979·State Council Document",
     extra_sections=[
@@ -169,7 +169,7 @@ display_object(
     title="Shenzhen in 1982",
     description="A construction site in Shenzhen 1982",
     image_path="Milestone Sources/1982_Shenzhen_in_1982.jpg",         
-    Source="https://en.wikipedia.org/wiki/File:Shenchen_in_1982.jpg",
+    Source="Wikimedia Commons - Shenzhen in 1982 (https://en.wikipedia.org/wiki/File:Shenchen_in_1982.jpg)",
     license_text="Creative Commons Attribution-Share Alike 3.0 Unported",
     caption="1982·Shenzhen",
     extra_sections=[
@@ -183,7 +183,7 @@ display_object(
     title="Guomao Building Completed",
     description="The International Trade Building in Shenzhen, China",
     image_path="Milestone Sources/1985_Guomao_Building_2006.jpeg",         
-    Source="https://zh.wikipedia.org/wiki/File:SZITB.JPG",
+    Source="Wikimedia Commons - Guomao Building (International Trade Centre) (https://zh.wikipedia.org/wiki/File:SZITB.JPG)",
     license_text="Creative Commons Attribution-Share Alike 2.5 Generic",
     caption="2006·Guomao Building",
     extra_sections=[
@@ -198,7 +198,7 @@ display_object(
     title="Shenzhen Stock Exchange Launch",
     description="The Shenzhen stock market",
     image_path="Milestone Sources/1990_Shenzhen_Stock_Exchange_2005.png",
-    Source="https://zh.wikipedia.org/wiki/File:Shenzhen_walk_02.JPG",
+    Source="Wikimedia Commons - Shenzhen Stock Exchange (https://zh.wikipedia.org/wiki/File:Shenzhen_walk_02.JPG)",
     license_text="Creative Commons Attribution-Share Alike 3.0 Unported",
     caption="2005·Shenzhen Stock Exchange",
     extra_sections=[
@@ -214,7 +214,7 @@ display_object(
     title="Shenzhen Bao’an International Airport Opening",
     description="Shenzhen Airport Terminal A",
     image_path="Milestone Sources/1991_Shenzhen_Baoan_International_Airport_Opening.JPG",         
-    Source="https://zh.wikipedia.org/wiki/File:Shenzhen_Airport_Terminal_A.JPG",
+    Source="Wikimedia Commons - Shenzhen Bao'an International Airport Terminal A (https://zh.wikipedia.org/wiki/File:Shenzhen_Airport_Terminal_A.JPG)",
     license_text="Creative Commons Attribution-Share Alike 4.0 International",
     caption="1991·Shenzhen Bao’an International Airport Opening",
     extra_sections=[
@@ -229,7 +229,7 @@ display_object(
     title="Shun Hing Square Complete",
     description="Shun Hing Square, Shenzhen, China, 2001",
     image_path="Milestone Sources/1996_Shun_Hing_Square_Complete.jpg",         
-    Source="https://commons.wikimedia.org/wiki/File:Shun_Hing_Square.jpg",
+    Source="Wikimedia Commons - Shun Hing Square (https://commons.wikimedia.org/wiki/File:Shun_Hing_Square.jpg)",
     license_text="Creative Commons Attribution-ShareAlike 3.0 Unported and GNU Free Documentation License",
     caption="1996·Shun Hing Square Complete",
     extra_sections=[
@@ -243,7 +243,7 @@ display_object(
     title="China-SAR-HongKong border",
     description="Shenzhen & S.A.R. Hong Kong border - view from Shenzhen, Luo Hu District - July 2005",
     image_path="Milestone Sources/1997_ ChinaSARHongKong_border.png",          
-    Source="https://zh.wikipedia.org/wiki/File:China-SAR-HongKong_border_view-from-Shenzhen1.jpg",
+    Source="Wikimedia Commons - Shenzhen-Hong Kong border view from Luohu (https://zh.wikipedia.org/wiki/File:China-SAR-HongKong_border_view-from-Shenzhen1.jpg)",
     license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication",
     caption="1997·China-SAR-HongKong border",
     extra_sections=[
@@ -257,7 +257,8 @@ display_object(
     year="1999",
     title="First China Hi-Tech Fair (CHTF)",
     description="Shenzhen Convention and Exhibition Center seen from the Free Sky observation deck at Ping An Finance Centre in Shenzhen, China.",
-    image_path="Milestone Sources/1999_First_China_HiTech_Fair.jpg",             Source="https://en.wikipedia.org/wiki/File:%E4%BA%91%E9%99%85%E8%A7%82%E5%85%89%E5%B1%82_2019_-_07.jpg",
+    image_path="Milestone Sources/1999_First_China_HiTech_Fair.jpg",             
+    Source="Wikimedia Commons - Cloud View Light Layer 2019 (https://en.wikipedia.org/wiki/File:%E4%BA%91%E9%99%85%E8%A7%82%E5%85%89%E5%B1%82_2019_-_07.jpg)",
     license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication.",
     caption="1999·First China Hi-Tech Fair (CHTF)",
     extra_sections=[
@@ -272,7 +273,7 @@ display_object(
     title="Shenzhen University Town Founding",
     description="University Town Shenzhen main entrance.",
     image_path="Milestone Sources/2000_Shenzhen_University_Town_Founding.jpg",         
-    Source="https://en.wikipedia.org/wiki/File:Umversitytownszmainentrance.jpg",
+    Source="Wikimedia Commons - Shenzhen University Town main entrance (https://en.wikipedia.org/wiki/File:Umversitytownszmainentrance.jpg)",
     license_text="Creative Commons Attribution-Share Alike 3.0 Unported",
     caption="2000·Shenzhen University Town Founding",
     extra_sections=[
@@ -287,7 +288,7 @@ display_object(
     title="Shenzhen Metro Line 1 Opening",
     description="Train 126 of Shenzhen Metro Line 1",
     image_path="Milestone Sources/2004_Shenzhen_Metro_Line_1_Opening.jpeg",         
-    Source="https://commons.wikimedia.org/wiki/File:ShenzhenMetro-L1-126.jpeg",
+    Source="Wikimedia Commons - Shenzhen Metro Line 1 (https://commons.wikimedia.org/wiki/File:ShenzhenMetro-L1-126.jpeg)",
     license_text="Creative Commons Attribution-Share Alike 4.0 International (CC BY-SA 4.0) / GNU Free Documentation License, version 1.2 or later.",
     caption="2004·Shenzhen Metro Line 1 Opening",
     extra_sections=[
@@ -301,7 +302,7 @@ display_object(
     title="DJI",
     description="DJI Innovations logo. Extracted from a DJI Quick Start Guide.",
     image_path="Milestone Sources/2006_DJI.png",         
-    Source="https://en.wikipedia.org/wiki/File:DJI_Innovations_logo.svg",
+    Source="Wikimedia Commons - DJI Innovations logo (https://en.wikipedia.org/wiki/File:DJI_Innovations_logo.svg)",
     license_text="Public Domain",
     caption="2006·DJI Innovations logo",
     extra_sections=[
@@ -314,7 +315,8 @@ display_object(
     year="2010",
     title="SEZ Expansion to Entire City",
     description="Subdivision of Shenzhen (French version). A map showing the administrative districts of Shenzhen as of the end of 2009, with labels in French.",
-    image_path="Milestone Sources/2010_SEZ_Expansion_to_Entire_City.png",            Source="https://commons.wikimedia.org/wiki/File:Shenzhen_administrative_divisions_(end_2009,_fr).svg",
+    image_path="Milestone Sources/2010_SEZ_Expansion_to_Entire_City.png",            
+    Source="Wikimedia Commons - Shenzhen administrative divisions (2009) (https://commons.wikimedia.org/wiki/File:Shenzhen_administrative_divisions_(end_2009,_fr).svg)",
     license_text="Creative Commons Attribution-Share Alike 2.5 Generic (CC BY-SA 2.5).",
     caption="2010·SEZ Expansion to Entire City",
     extra_sections=[
@@ -333,7 +335,7 @@ display_object(
     title="Kingkey 100 Completion",
     description="A photograph of the Kingkey 100 Tower in Shenzhen, China.",
     image_path="Milestone Sources/2011_Kingkey_100_Completion.jpg",         
-    Source="https://en.wikipedia.org/wiki/File:Kingkey-100-5.jpg",
+    Source="Wikimedia Commons - Kingkey 100 (https://en.wikipedia.org/wiki/File:Kingkey-100-5.jpg)",
     license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication.",
     caption="2011·Kingkey 100 Completion",
     extra_sections=[
@@ -347,7 +349,7 @@ display_object(
     title="Ping An Finance Center Topping Out",
     description="Centre commercial area of Futian district",
     image_path="Milestone Sources/2014_Ping_An_Finance_Center_Topping_Out.jpg",         
-    Source="https://commons.wikimedia.org/wiki/File:Commercial_area_of_futian_to_east2020_(4to3).jpg",
+    Source="Wikimedia Commons - Futian commercial area 2020 (https://commons.wikimedia.org/wiki/File:Commercial_area_of_futian_to_east2020_(4to3).jpg)",
     license_text="Creative Commons Attribution-Share Alike 4.0 International (CC BY-SA 4.0).",
     caption="2014·Ping An Finance Center Topping Out",
     extra_sections=[
@@ -361,7 +363,7 @@ display_object(
     title="Shenzhen-Hong Kong Stock Connect Open",
     description="An interior view photograph of the Shenzhen Stock Exchange.",
     image_path="Milestone Sources/2016_ShenzhenHongKong_Stock_Connect_Open.png",         
-    Source="https://commons.wikimedia.org/wiki/File:Shenzhen_Stock_Exchange.jpg",
+    Source="Wikimedia Commons - Shenzhen Stock Exchange (https://commons.wikimedia.org/wiki/File:Shenzhen_Stock_Exchange.jpg)",
     license_text="Creative Commons Attribution-Share Alike 3.0 Unported",
     caption="2016·Shenzhen-Hong Kong Stock Connect Open",
     extra_sections=[
@@ -375,7 +377,7 @@ display_object(
     title="Hong Kong-Zhuhai-Macao Bridge",
     description="Taken from a TurboJET after leaving Macau.",
     image_path="Milestone Sources/2018_HongKongZhuhaiMacao_Bridge.jpeg",         
-    Source="https://commons.wikimedia.org/wiki/File:West_section_of_Hong_Kong-Zhuhai-Macau_Bridge_(20180902174105).jpg",
+    Source="Wikimedia Commons - Hong Kong-Zhuhai-Macao Bridge (west section) (https://commons.wikimedia.org/wiki/File:West_section_of_Hong_Kong-Zhuhai-Macau_Bridge_(20180902174105).jpg)",
     license_text="Creative Commons Attribution-Share Alike 4.0",
     caption="2018·Hong Kong-Zhuhai-Macao Bridge",
     extra_sections=[
@@ -389,7 +391,7 @@ display_object(
     title="Intelligent Connected Vehicles Regulation",
     description="Regulations of Shenzhen Special Economic Zone on the Administration of Intelligent Connected Vehicles",
     image_path="Milestone Sources/2023_Intelligent_Connected_Vehicles_Regulation.png",         
-    Source="https://sf.sz.gov.cn/fggzywyb/content/mpost_11216374.html",
+    Source="Official Website of Shenzhen Municipal Government (https://sf.sz.gov.cn/fggzywyb/content/mpost_11216374.html)",
     license_text="Public information provided by the Shenzhen Municipal Government; Subject to Chinese government information disclosure and copyright laws",
     caption="2023·Intelligent Connected Vehicles Regulation",
     extra_sections=[
@@ -403,7 +405,7 @@ display_object(
     title="Shenzhen-Zhongshan Link Opening",
     description="Shenzhen-Zhongshan Link in June 2025",
     image_path="Milestone Sources/2024_ShenzhenZhongshan_Link_Opening.jpg",         
-    Source="https://en.wikipedia.org/wiki/File:Shenzhen-Zhongshan_Link_2025.06.jpg",
+    Source="Wikimedia Commons - Shenzhen-Zhongshan Link (https://en.wikipedia.org/wiki/File:Shenzhen-Zhongshan_Link_2025.06.jpg)",
     license_text="Creative Commons Attribution-Share Alike 4.0 International",
     caption="2024·Shenzhen-Zhongshan Link Opening",
     extra_sections=[
@@ -417,8 +419,8 @@ display_object(
     title="Qianhai Huafa Ice & Snow World Opening",
     description="The design of Shenzhen Qianhai Huafa Snow World by 10 Design",
     image_path="Milestone Sources/2025_Qianhai_Huafa_Ice_Snow_World_Opening.jpg",         
-    Source="https://commons.wikimedia.org/wiki/File:GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E8%B7%A8%E5%B8%82%E5%A4%A7%E5%B7%B4_intercity_bus_tour_view_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%AF%B6%E5%AE%89%E5%8D%80_BaoAn_District_buildings_1123am_October_2024_R12S_436.jpg",
-    license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication.",
+    Source="Wikimedia Commons - Shenzhen Bao'an District buildings 2024 (https://commons.wikimedia.org/wiki/File:GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E8%B7%A8%E5%B8%82%E5%A4%A7%E5%B7%B4_intercity_bus_tour_view_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%AF%B6%E5%AE%89%E5%8D%80_BaoAn_District_buildings_1123am_October_2024_R12S_436.jpg",
+    license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication)",
     caption="2025·Qianhai Huafa Ice & Snow World Opening",
     extra_sections=[
         ("Historical Significance", """Qianhai Ice & Snow World (430,000 m²) opened in 2025. 
