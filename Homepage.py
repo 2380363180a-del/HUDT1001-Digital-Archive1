@@ -154,17 +154,19 @@ def display_object(year, title, description, image_path, Source, license_text,
 display_object(
     year="1979",
     title="Shenzhen Municipality was Officially Established",
-    description="In March 1979, the State Council issued Document No. [1979] 63, officially establishing Shenzhen Municipality, marking the legal starting point for Shenzhen's transformation from a small border town into a modern city and laid the foundation for its designation as China's first Special Economic Zone.",
+    description="The State Council of the People's Republic of China issued Document No. [1979] 63, officially establishing Shenzhen Municipality as a prefecture-level city.",
     image_path="Milestone Sources/1979_State_Council_Document.png",
-    source="Wikimedia Commons - State Council Document No. [1979] 63 (https://upload.wikimedia.org/wikipedia/commons/6/6f/%E5%9B%BD%E5%8F%91%E3%80%941979%E3%80%9563%E5%8F%B7.webp)",
+    source="Wikimedia Commons - State Council Document No. [1979] 63",
     license_text="Public Domain in mainland China according to Article 5 of the Copyright Law of the People's Republic of China. This official government document is not subject to copyright.",
     caption="1979·State Council Document",
     extra_sections=[
-    ("Translation", """State Council Document. State Council [1979] No. 63. Reply of the State Council on Approving the Establishment of Shenzhen Municipality and Zhuhai Municipality in Guangdong Province
+        ("Translation", """State Council Document. State Council [1979] No. 63. 
+Reply of the State Council on Approving the Establishment of Shenzhen Municipality and Zhuhai Municipality in Guangdong Province.
+
 To the Revolutionary Committee of Guangdong Province: Your report dated January 13, 1979, has been received and is hereby approved as follows:
-1.  Bao'an County shall be converted into Shenzhen Municipality, with the administrative area of Bao'an County serving as the administrative area of Shenzhen Municipality. The Municipal Revolutionary Committee shall be stationed in Shenzhen.
-2.  Zhuhai County shall be converted into Zhuhai Municipality, with the administrative area of Zhuhai County serving as the administrative area of Zhuhai Municipality. The Municipal Revolutionary Committee shall be stationed in Xiangzhou.""")
-]
+1. Bao’an County shall be converted into Shenzhen Municipality, with the administrative area of Bao’an County serving as the administrative area of Shenzhen Municipality. The Municipal Revolutionary Committee shall be stationed in Shenzhen.
+2. Zhuhai County shall be converted into Zhuhai Municipality, with the administrative area of Zhuhai County serving as the administrative area of Zhuhai Municipality. The Municipal Revolutionary Committee shall be stationed in Xiangzhou.""")
+    ]
 )
 
 # ============================================
