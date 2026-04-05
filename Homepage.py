@@ -229,7 +229,7 @@ display_object(
     year="1997",
     title="China-SAR-HongKong border",
     description="""On 1 July 1997, Hong Kong was handed over to China under “One Country, Two Systems,” which greatly boosted international confidence in Shenzhen and strengthened its role as the mainland's gateway to global capital and investment.""",
-    image_path="Milestone Sources/1997_ ChinaSARHongKong_border.png",
+    image_path="Milestone Sources/1997_ChinaSARHongKong_border.png",
     source="Wikimedia Commons - Shenzhen-Hong Kong border view from Luohu",
     license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication",
     caption="2006·China-SAR-HongKong border"
