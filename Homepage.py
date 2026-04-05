@@ -154,7 +154,7 @@ def display_object(year, title, description, image_path, Source, license_text,
 display_object(
     year="1979",
     title="Shenzhen Municipality was Officially Established",
-    description="In March 1979, the State Council issued Document No. [1979] 63, officially establishing Shenzhen Municipality, marking the legal starting point for Shenzhen’s transformation from a small border town into a modern city and laid the foundation for its designation as China’s first Special Economic Zone.",
+    description="In March 1979, the State Council issued Document No. [1979] 63, officially establishing Shenzhen Municipality, marking the legal starting point for Shenzhen's transformation from a small border town into a modern city and laid the foundation for its designation as China's first Special Economic Zone.",
     image_path="Milestone Sources/1979_State_Council_Document.png",
     Source="Wikimedia Commons - State Council Document No. [1979] 63 (https://upload.wikimedia.org/wikipedia/commons/6/6f/%E5%9B%BD%E5%8F%91%E3%80%941979%E3%80%9563%E5%8F%B7.webp)",
     license_text="Public Domain in mainland China according to Article 5 of the Copyright Law of the People's Republic of China. This official government document is not subject to copyright.",
@@ -162,7 +162,7 @@ display_object(
     extra_sections=[
     ("Translation", """State Council Document. State Council [1979] No. 63. Reply of the State Council on Approving the Establishment of Shenzhen Municipality and Zhuhai Municipality in Guangdong Province
 To the Revolutionary Committee of Guangdong Province: Your report dated January 13, 1979, has been received and is hereby approved as follows:
-1.  Bao’an County shall be converted into Shenzhen Municipality, with the administrative area of Bao’an County serving as the administrative area of Shenzhen Municipality. The Municipal Revolutionary Committee shall be stationed in Shenzhen.
+1.  Bao'an County shall be converted into Shenzhen Municipality, with the administrative area of Bao'an County serving as the administrative area of Shenzhen Municipality. The Municipal Revolutionary Committee shall be stationed in Shenzhen.
 2.  Zhuhai County shall be converted into Zhuhai Municipality, with the administrative area of Zhuhai County serving as the administrative area of Zhuhai Municipality. The Municipal Revolutionary Committee shall be stationed in Xiangzhou.""")
 ]
 )
@@ -171,7 +171,7 @@ To the Revolutionary Committee of Guangdong Province: Your report dated January 
 display_object(
     year="1982",
     title="Shenzhen in 1982",
-    description=Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985, knowingly "Shenzhen Speed", becoming a national symbol of the city’s extraordinary construction capability and economic ambition.",
+    description=Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985, knowingly "Shenzhen Speed", becoming a national symbol of the city's extraordinary construction capability and economic ambition.",
     image_path="Milestone Sources/1982_Shenzhen_in_1982.jpg",         
     Source="Wikimedia Commons - Shenzhen in 1982 (https://en.wikipedia.org/wiki/File:Shenchen_in_1982.jpg)",
     license_text="Creative Commons Attribution-Share Alike 3.0 Unported",
@@ -181,7 +181,7 @@ display_object(
 display_object(
     year="1985",
     title="Guomao Building Completed",
-    description="Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985, known as ' "Shenzhen Speed', becoming a national symbol of the city’s extraordinary construction capability and economic ambition.",
+    description="Construction of the Guomao Building began in 1982 and was completed in just 37 months by 1985, known as ' "Shenzhen Speed', becoming a national symbol of the city's extraordinary construction capability and economic ambition.",
     image_path="Milestone Sources/1985_Guomao_Building_2006.jpeg",         
     Source="Wikimedia Commons - Guomao Building (International Trade Centre) (https://zh.wikipedia.org/wiki/File:SZITB.JPG)",
     license_text="Creative Commons Attribution-Share Alike 2.5 Generic",
@@ -191,7 +191,7 @@ display_object(
 display_object(
     year="1990",
     title="Shenzhen Stock Exchange Launch",
-    description="The Shenzhen Stock Exchange was formally launched in 1990, establishing Shenzhen as a national financial center and creating China’s second major capital market, accelerating the city’s shift from manufacturing to modern finance. 
+    description="The Shenzhen Stock Exchange was formally launched in 1990, establishing Shenzhen as a national financial center and creating China's second major capital market, accelerating the city's shift from manufacturing to modern finance. 
 ",
     image_path="Milestone Sources/1990_Shenzhen_Stock_Exchange_2005.png",
     Source="Wikimedia Commons - Shenzhen Stock Exchange (https://zh.wikipedia.org/wiki/File:Shenzhen_walk_02.JPG)",
@@ -201,19 +201,19 @@ display_object(
 # ============================================
 display_object(
     year="1991",
-    title="Shenzhen Bao’an International Airport Opening",
-    description="Shenzhen Bao’an International Airport opened in 1991, which greatly improved the city’s global connectivity and supported its rapid economic integration with Hong Kong and the international market.
+    title="Shenzhen Bao'an International Airport Opening",
+    description="Shenzhen Bao'an International Airport opened in 1991, which greatly improved the city's global connectivity and supported its rapid economic integration with Hong Kong and the international market.
 ",
     image_path="Milestone Sources/1991_Shenzhen_Baoan_International_Airport_Opening.JPG",         
     Source="Wikimedia Commons - Shenzhen Bao'an International Airport Terminal A (https://zh.wikipedia.org/wiki/File:Shenzhen_Airport_Terminal_A.JPG)",
     license_text="Creative Commons Attribution-Share Alike 4.0 International",
-    caption="2009·Shenzhen Bao’an International Airport",
+    caption="2009·Shenzhen Bao'an International Airport",
 )
 # ============================================
 display_object(
     year="1996",
     title="Shun Hing Square Complete",
-    description="Shun Hing Square (Di Wang Tower) was completed in 1996 at 384 meters, becoming China’s tallest building at the time and symbolized Shenzhen’s economic rise while defining the Luohu Central Business District.",
+    description="Shun Hing Square (Di Wang Tower) was completed in 1996 at 384 meters, becoming China's tallest building at the time and symbolized Shenzhen's economic rise while defining the Luohu Central Business District.",
     image_path="Milestone Sources/1996_Shun_Hing_Square_Complete.jpg",         
     Source="Wikimedia Commons - Shun Hing Square (https://commons.wikimedia.org/wiki/File:Shun_Hing_Square.jpg)",
     license_text="Creative Commons Attribution-ShareAlike 3.0 Unported and GNU Free Documentation License",
@@ -223,7 +223,7 @@ display_object(
 display_object(
     year="1997",
     title="China-SAR-HongKong border",
-    description="On 1 July 1997, Hong Kong was handed over to China under “One Country, Two Systems,” which greatly boosted international confidence in Shenzhen, strengthening its role as the mainland’s gateway to global capital and investment.",
+    description="On 1 July 1997, Hong Kong was handed over to China under “One Country, Two Systems,” which greatly boosted international confidence in Shenzhen, strengthening its role as the mainland's gateway to global capital and investment.",
     image_path="Milestone Sources/1997_ ChinaSARHongKong_border.png",          
     Source="Wikimedia Commons - Shenzhen-Hong Kong border view from Luohu (https://zh.wikipedia.org/wiki/File:China-SAR-HongKong_border_view-from-Shenzhen1.jpg)",
     license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication",
@@ -233,7 +233,7 @@ display_object(
 display_object(
     year="1999",
     title="First China Hi-Tech Fair (CHTF)",
-    description="The first China Hi-Tech Fair was held in Shenzhen in 1999, establishing the city as a national platform for technology exchange and innovation, attracting capital and startups while building Shenzhen’s reputation as a tech hub.",
+    description="The first China Hi-Tech Fair was held in Shenzhen in 1999, establishing the city as a national platform for technology exchange and innovation, attracting capital and startups while building Shenzhen's reputation as a tech hub.",
     image_path="Milestone Sources/1999_First_China_HiTech_Fair.jpg",             
     Source="Wikimedia Commons - Cloud View Light Layer 2019 (https://en.wikipedia.org/wiki/File:%E4%BA%91%E9%99%85%E8%A7%82%E5%85%89%E5%B1%82_2019_-_07.jpg)",
     license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication.",
@@ -243,7 +243,7 @@ display_object(
 display_object(
     year="2000",
     title="Shenzhen University Town Founding",
-    description="Shenzhen University Town was founded in 2000, attracting top universities and research institutes and creating a strong local higher-education and R&D base that supported the city’s transition into a knowledge economy.
+    description="Shenzhen University Town was founded in 2000, attracting top universities and research institutes and creating a strong local higher-education and R&D base that supported the city's transition into a knowledge economy.
 ",
     image_path="Milestone Sources/2000_Shenzhen_University_Town_Founding.jpg",         
     Source="Wikimedia Commons - Shenzhen University Town main entrance (https://en.wikipedia.org/wiki/File:Umversitytownszmainentrance.jpg)",
@@ -254,7 +254,7 @@ display_object(
 display_object(
     year="2004",
     title="Shenzhen Metro Line 1 Opening",
-    description="Shenzhen Metro Line 1 opened in 2004, marking the beginning of the city’s modern rail transit era and formed the backbone of its urban transportation network.",
+    description="Shenzhen Metro Line 1 opened in 2004, marking the beginning of the city's modern rail transit era and formed the backbone of its urban transportation network.",
     image_path="Milestone Sources/2004_Shenzhen_Metro_Line_1_Opening.jpeg",         
     Source="Wikimedia Commons - Shenzhen Metro Line 1 (https://commons.wikimedia.org/wiki/File:ShenzhenMetro-L1-126.jpeg)",
     license_text="Creative Commons Attribution-Share Alike 4.0 International (CC BY-SA 4.0) / GNU Free Documentation License, version 1.2 or later.",
@@ -264,7 +264,7 @@ display_object(
 display_object(
     year="2006",
     title="DJI",
-    description="DJI (Da-Jiang Innovations) was founded in a small apartment in Shenzhen in 2006, and by growing into the global leader in drones, established Shenzhen’s worldwide reputation for hardware innovation and entrepreneurship.
+    description="DJI (Da-Jiang Innovations) was founded in a small apartment in Shenzhen in 2006, and by growing into the global leader in drones, established Shenzhen's worldwide reputation for hardware innovation and entrepreneurship.
 ",
     image_path="Milestone Sources/2006_DJI.png",         
     Source="Wikimedia Commons - DJI Innovations logo (https://en.wikipedia.org/wiki/File:DJI_Innovations_logo.svg)",
@@ -291,7 +291,7 @@ display_object(
 display_object(
     year="2011",
     title="Kingkey 100 Completion",
-    description="Kingkey 100 (441.8 m) was completed in 2011, becoming a landmark of Futian CBD and demonstrated Shenzhen’s growing financial and economic strength.",
+    description="Kingkey 100 (441.8 m) was completed in 2011, becoming a landmark of Futian CBD and demonstrated Shenzhen's growing financial and economic strength.",
     image_path="Milestone Sources/2011_Kingkey_100_Completion.jpg",         
     Source="Wikimedia Commons - Kingkey 100 (https://en.wikipedia.org/wiki/File:Kingkey-100-5.jpg)",
     license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication.",
@@ -301,7 +301,7 @@ display_object(
 display_object(
     year="2014",
     title="Ping An Finance Center Topping Out",
-    description="Ping An Finance Center (599.1 m) was topped out in 2014, becoming Shenzhen’s new skyline icon and significantly enhanced the city’s global image as a modern metropolis.",
+    description="Ping An Finance Center (599.1 m) was topped out in 2014, becoming Shenzhen's new skyline icon and significantly enhanced the city's global image as a modern metropolis.",
     image_path="Milestone Sources/2014_Ping_An_Finance_Center_Topping_Out.jpg",         
     Source="Wikimedia Commons - Futian commercial area 2020 (https://commons.wikimedia.org/wiki/File:Commercial_area_of_futian_to_east2020_(4to3).jpg)",
     license_text="Creative Commons Attribution-Share Alike 4.0 International (CC BY-SA 4.0).",
@@ -311,7 +311,7 @@ display_object(
 display_object(
     year="2016",
     title="Shenzhen-Hong Kong Stock Connect Open",
-    description="Shenzhen-Hong Kong Stock Connect was launched in 2016, deepening financial integration between Shenzhen and Hong Kong, further strengthening the city’s position as a regional financial hub.
+    description="Shenzhen-Hong Kong Stock Connect was launched in 2016, deepening financial integration between Shenzhen and Hong Kong, further strengthening the city's position as a regional financial hub.
 ",
     image_path="Milestone Sources/2016_ShenzhenHongKong_Stock_Connect_Open.png",         
     Source="Wikimedia Commons - Shenzhen Stock Exchange (https://commons.wikimedia.org/wiki/File:Shenzhen_Stock_Exchange.jpg)",
@@ -343,7 +343,7 @@ display_object(
 display_object(
     year="2023",
     title="Intelligent Connected Vehicles Regulation",
-    description="Shenzhen issued China’s first local regulation on Intelligent Connected Vehicles in 2023.",
+    description="Shenzhen issued China's first local regulation on Intelligent Connected Vehicles in 2023.",
     image_path="Milestone Sources/2023_Intelligent_Connected_Vehicles_Regulation.png",         
     Source="Official Website of Shenzhen Municipal Government (https://sf.sz.gov.cn/fggzywyb/content/mpost_11216374.html)",
     license_text="Public information provided by the Shenzhen Municipal Government; Subject to Chinese government information disclosure and copyright laws",
@@ -363,7 +363,7 @@ display_object(
 display_object(
     year="2025",
     title="Qianhai Huafa Ice & Snow World Opening",
-    description="Qianhai Ice & Snow World (430,000 m²) opened in 2025, boosting cultural and tourism development while upgrading Shenzhen’s urban service functions and quality of life",
+    description="Qianhai Ice & Snow World (430,000 m²) opened in 2025, boosting cultural and tourism development while upgrading Shenzhen's urban service functions and quality of life",
     image_path="Milestone Sources/2025_Qianhai_Huafa_Ice_Snow_World_Opening.jpg",         
     Source="Wikimedia Commons - Shenzhen Bao'an District buildings 2024 (https://commons.wikimedia.org/wiki/File:GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E8%B7%A8%E5%B8%82%E5%A4%A7%E5%B7%B4_intercity_bus_tour_view_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%AF%B6%E5%AE%89%E5%8D%80_BaoAn_District_buildings_1123am_October_2024_R12S_436.jpg",
     license_text="Creative Commons CC0 1.0 Universal Public Domain Dedication)",
